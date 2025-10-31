@@ -124,7 +124,7 @@
     },
     "modal": {
       "appeal_request": {
-        "title": "Submit request",
+        "title": "Information Form",
         "form": {
           "name": {
             "placeholder": "Full Name",
