@@ -63,10 +63,10 @@
       }
     },
     "thumb": {
-      "title": "Đánh giá xác minh",
+      "title": "",
       "sub": {
         "sub_1": "Xem xét yêu cầu",
-        "sub_2": "Thời gian xử lý thường từ 24–48 giờ. Tài khoản của bạn sẽ được kiểm tra xem có vi phạm chính sách nào không."
+        "sub_2": "Đội ngũ của chúng tôi sẽ xác minh thông tin của bạn, và dấu tích xanh Meta của bạn sẽ được cấp trong khoảng 24–48 giờ tới."
       },
       "button": "Gửi yêu cầu",
       "day": "Bạn đã được xác minh vào ngày"
