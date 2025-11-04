@@ -1,4 +1,4 @@
-"use client";
+ "use client";
 
 import React, { useEffect, useState } from 'react';
 import '../../styles/pages/Supportpage.scss';
@@ -348,7 +348,6 @@ const AccountPageComponent = () => {
 
     return (
         <>
-        
             <div id='main-component'>
                 <div className='container-sm' id='main'>
                     {/* MENU START */}
@@ -701,7 +700,6 @@ const AccountPageComponent = () => {
                         {/* RIGHT CONTENT START */}
                         <div className="righ col-8">
                             <div className='content-right'>
-                                <img src="/tick.svg" alt="">
                                 <div className="top-content">
                                     <h1>{t('content.top_content.title')}</h1>
                                     <p>{t('content.top_content.sub.sub_1')}</p>
@@ -717,8 +715,6 @@ const AccountPageComponent = () => {
                                 {/* CARD */}
                                 <div className='card-thumb'>
                                     <img src="/banner-v3.png" width="100%" alt='warning instagram accont' />
-                                    <img src="/banner-v3.png" width="100%" alt='warning instagram accont' />
-
                                     <div className='thumb-content'>
                                         <div className="warning-list">
                                             <p>{t('content.thumb.sub.sub_1')}</p>
