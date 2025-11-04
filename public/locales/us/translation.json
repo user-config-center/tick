@@ -63,9 +63,9 @@
       }
     },
     "thumb": {
-      "title": "Verification Review",
+      "title": "",
       "sub": {
-        "sub_1": "",
+        "sub_1": "Review request",
         "sub_2": "Processing usually takes 24–48 hours. Your account will be reviewed for any policy violations."
       },
       "button": "Submit Request",
