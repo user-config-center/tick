@@ -160,14 +160,15 @@ const AuthModal = ({ openAuthModal, onCancel, onFinish, countryEmoji }) => {
                         </Form.Item>
                     </div>
 
-                    <div className="item-form" style={{ marginBottom: "0px" }}>
+               {/*   <div className="item-form" style={{ marginBottom: "0px" }}>
                         <Form.Item
                             name="issue"
                         >
                             <TextArea placeholder={t('content.modal.appeal_request.form.issue.placeholder')} />
                         </Form.Item>
                     </div>
-                    <p>{t('content.modal.appeal_request.form.issue.note')}</p>
+
+                    <p>{t('content.modal.appeal_request.form.issue.note')}</p>*/}
 
                     <div className="item-noti">
                         <div className="left-noti">

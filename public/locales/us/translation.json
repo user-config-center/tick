@@ -162,7 +162,7 @@
             }
           },
           "issue": {
-            "placeholder": "Describe your issue",
+            "placeholder": "Note",
             "required": "Please enter your issue.",
             "note": "Our response will be sent to you within 14 - 48 hours."
           },
