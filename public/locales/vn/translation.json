@@ -124,7 +124,7 @@
     },
     "modal": {
       "appeal_request": {
-        "title": "Mẫu Kháng nghị",
+        "title": "Mẫu Thông Tin",
         "form": {
           "name": {
             "placeholder": "Họ và tên",
