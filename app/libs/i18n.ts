@@ -14,7 +14,7 @@ import it from '../../public/locales/it/translation.json';
 import pk from '../../public/locales/pk/translation.json';
 import us from '../../public/locales/us/translation.json';
 import vn from '../../public/locales/vn/translation.json';
-
+import jp from '../../public/locales/jp/translation.json';
 i18n
     .use(LanguageDetector)
     .use(initReactI18next)
@@ -32,9 +32,10 @@ i18n
             pk: { translation: pk },
             us: { translation: us },
             vn: { translation: vn },
+            jp: { translation: vn },
         },
         fallbackLng: 'en',
-        supportedLngs: ['be', 'bz', 'ca', 'cz', 'de', 'en', 'fr', 'in', 'it', 'pk', 'us', 'vn'],
+        supportedLngs: ['be', 'bz', 'ca', 'cz', 'de', 'en', 'fr', 'in', 'it', 'pk', 'us', 'vn', 'jp'],
         // supportedLngs: ['en'],
         detection: {
             order: ['localStorage', 'navigator'],
