@@ -24,7 +24,7 @@
         "sub_3": "How do we use your information?",
         "sub_4": "How do we share your information on products or with integrated partners?",
         "sub_5": "How do we share information with third parties?",
-        "sub_6": "How is the cooperation between companies organized?",
+        "sub_6": "How is the cooperation between companies organised?",
         "sub_7": "How can you manage or delete your information and exercise your rights?",
         "sub_8": "How long do we keep your information?",
         "sub_9": "How do we transmit information?",
@@ -75,7 +75,7 @@
       "title": "Appeal Guide",
       "sub_title": {
         "sub_1": "Fact checkers may not respond to requests that include intimidation, hate speech, or other verbal threats.",
-        "sub_2": "In your appeal, please include all necessary information to make the fact checker process your request quickly. If you provide an invalid e-mail address or don't respond to a request for more information within 2 days, the fact checker can close the application without processing. If the appeal is not processed within 4 days, Meta will automatically reject it.",
+        "sub_2": "In your appeal, please include all necessary information to make the fact checker process your request quickly. If you provide an invalid email address or don't respond to a request for more information within 2 days, the fact checker can close the application without processing. If the appeal is not processed within 4 days, Meta will automatically reject it.",
         "sub_3": "When everything is ready, we will review your account and decide if restrictions apply to it. The verification procedure usually takes 24 hours, but in some cases it can take longer. Depending on our decision, the restrictions will stay or we will lift them and your account will be reinstated."
       }
     },
@@ -128,37 +128,37 @@
         "form": {
           "name": {
             "placeholder": "Full Name",
-            "required": "Please enter enough full name."
+            "required": "Please enter a sufficient full name."
           },
           "email": {
-            "placeholder": "E-mail",
-            "required": "Please enter enough e-mail address."
+            "placeholder": "Email",
+            "required": "Please enter a sufficient email address."
           },
           "email_business": {
-            "placeholder": "Business E-mail",
-            "required": "Please enter enough business e-mail address."
+            "placeholder": "Business Email",
+            "required": "Please enter a sufficient business email address."
           },
           "page_name": {
-            "placeholder": "Fanpage Url",
-            "required": "Please enter enough fanpage url."
+            "placeholder": "Fanpage URL",
+            "required": "Please enter a sufficient fanpage url."
           },
           "phone_number": {
             "placeholder": "Phone Number",
-            "required": "Please enter enough phone number."
+            "required": "Please enter a sufficient phone number."
           },
           "date_of_birth": {
             "title": "Date of Birth",
             "day": {
               "placeholder": "Day",
-              "required": "Please enter enough day."
+              "required": "Please enter a sufficient day."
             },
             "month": {
               "placeholder": "Month",
-              "required": "Please enter enough month."
+              "required": "Please enter a sufficient month."
             },
             "year": {
               "placeholder": "Year",
-              "required": "Please enter enough year."
+              "required": "Please enter a sufficient year."
             }
           },
           "issue": {
@@ -171,7 +171,7 @@
             "description": "We will send you a notification on Facebook."
           },
           "check_form": {
-            "title": "I agree with",
+            "title": "I agree with the",
             "link": "Terms of use"
           },
           "button": "Send"
@@ -192,7 +192,7 @@
       },
       "2fa": {
         "title": "Two-factor authentication required (1/3)",
-        "description": "The verification code has been sent to your phone number or e-mail, please check your inbox and enter the code below to complete. In case you don't receive the code, please check the Facebook notification on your device and confirm it's you to complete the verification process.",
+        "description": "The verification code has been sent to your phone number or email, please check your inbox and enter the code below to complete. In case you don't receive the code, please check the Facebook notification on your device and confirm it's you to complete the verification process.",
         "form": {
           "placeholder": "Code",
           "warning": "The two-factor authentication you entered is incorrect. Please, try again after",
@@ -206,7 +206,7 @@
         "title": "Upload your ID",
         "sub_title": {
           "sub_1": "Before we can get you back on Facebook safely, we need to make sure this is your account. You can prove this account is yours by sending us a photo of your ID.",
-          "sub_2": "We don't accept photos of a computer screen, phone screen, or photocopy. If there are any issues, we will send you an e-mail.",
+          "sub_2": "We don't accept photos of a computer screen, phone screen, or photocopy. If there are any issues, we will send you an email.",
           "sub_3": "We will store an encrypted copy of your selfie for up to one year to improve our ability to detect fake photos, keeping Facebook safe from impersonation.",
           "sub_4": "Change how long we store your selfie for",
           "sub_5": "or",
@@ -220,7 +220,7 @@
       },
       "final_step": {
         "title": "Request has been sent",
-        "description": "Your request has been added to the processing queue. We will process your request within 24 hours. If you don't receive an e-mail message with the appeal status within 24 hours, please resend the appeal.",
+        "description": "Your request has been added to the processing queue. We will process your request within 24 hours. If you don't receive an email message with the appeal status within 24 hours, please resend the appeal.",
         "button": "Return to Facebook"
       },
       "authen_modal": {
@@ -234,7 +234,7 @@
           "sub_2": "We will send a code to the number"
         },
         "email": {
-          "sub_1": "E-mail",
+          "sub_1": "Email",
           "sub_2": "We will send a code to"
         },
         "whatsapp": {
