@@ -1,0 +1,247 @@
+{
+  "menu": {
+    "title": "Sentro ng Privacy",
+    "menu_1": {
+      "title": "Home ng Sentro ng Privacy"
+    },
+    "menu_2": {
+      "title": "Maghanap"
+    },
+    "menu_3": {
+      "title": "Karaniwang Mga Setting ng Privacy"
+    },
+    "menu_4": {
+      "title": "Mga Paksa Tungkol sa Privacy"
+    },
+    "menu_5": {
+      "title": "Higit pang Mga Mapagkukunan ng Privacy"
+    },
+    "menu_6": {
+      "title": "Patakaran sa Privacy",
+      "sub_title": {
+        "sub_1": "Ano ang Patakaran sa Privacy at ano ang saklaw nito?",
+        "sub_2": "Anong impormasyon ang kinokolekta namin?",
+        "sub_3": "Paano namin ginagamit ang iyong impormasyon?",
+        "sub_4": "Paano namin ibinabahagi ang iyong impormasyon sa mga produkto o kasosyong pinagsama?",
+        "sub_5": "Paano namin ibinabahagi ang impormasyon sa mga third party?",
+        "sub_6": "Paano nakaayos ang kooperasyon ng mga kumpanya?",
+        "sub_7": "Paano mo mapapamahalaan o matatanggal ang iyong impormasyon at magamit ang iyong mga karapatan?",
+        "sub_8": "Gaano katagal namin pinananatili ang iyong impormasyon?",
+        "sub_9": "Paano namin ipinapadala ang impormasyon?",
+        "sub_10": "Paano kami tumutugon sa mga opisyal na kahilingan, sumusunod sa batas, at pumipigil sa pinsala?",
+        "sub_11": "Paano mo malalaman kung nagbago ang patakaran?",
+        "sub_12": "Paano magtanong?",
+        "sub_13": "Bakit at paano namin pinoproseso ang iyong data"
+      }
+    },
+    "menu_7": {
+      "title": "Iba pang Mga Patakaran at Artikulo",
+      "sub_title": {
+        "sub_1": "Patakaran sa Cookie",
+        "sub_2": "Impormasyon para sa mga hindi gumagamit ng produkto",
+        "sub_3": "Paano ginagamit ang impormasyon para sa mga modelong Generative AI",
+        "sub_4": "Patakaran sa Balangkas ng Paglilipat ng Data",
+        "sub_5": "Iba pang mga tuntunin at kundisyon"
+      }
+    }
+  },
+  "content": {
+    "top_content": {
+      "title": "Meta Verified – Mga Gantimpala Para sa Iyo",
+      "sub": {
+        "sub_1": "Binabati ka sa pagtupad sa mga kinakailangan para i-upgrade ang iyong pahina gamit ang asul na badge ng beripikasyon! Isang malaking tagumpay ito na nagpapakita ng iyong dedikasyon at tiwala mula sa iyong komunidad.",
+        "sub_2": "Masaya kaming ipagdiwang ito kasama ka at nasasabik kaming makita ang patuloy na paglago ng iyong pahina sa ilalim ng prestihiyosong pagkilalang ito!"
+      },
+      "ticket": "ID ng Iyong Kahilingan:"
+    },
+    "guide": {
+      "title": "✅ Gabay sa Kahilingan ng Asul na Badge ng Beripikasyon",
+      "sub": {
+        "sub_1": "Hindi tutugon ang mga tagasuri sa mga kahilingang may pagbabanta, mapoot na pananalita, o pang-aabusong wika.",
+        "sub_2": "Mangyaring ibigay ang lahat ng kinakailangang impormasyon upang maproseso agad ang iyong kahilingan. Kung mali o hindi valid ang email address, o hindi ka tumugon sa karagdagang kahilingan sa loob ng 2 araw, maaaring isara ang aplikasyon nang hindi nire-review. Kung hindi ito maproseso sa loob ng 4 na araw, awtomatikong tatanggihan ito ng Meta.",
+        "sub_3": "Kapag naisumite na ang lahat ng detalye, susuriin namin ang iyong account para sa anumang limitasyon sa patakaran. Karaniwang tumatagal ng 24 oras ang proseso ng beripikasyon, ngunit maaaring mas matagal sa ilang kaso. Batay sa resulta, mananatili o aalisin ang mga limitasyon at ia-update ang iyong account nang naaayon."
+      }
+    },
+    "thumb": {
+      "title": "",
+      "sub": {
+        "sub_1": "Suriin ang Kahilingan",
+        "sub_2": "Beripikahin ng aming team ang iyong impormasyon, at maibibigay ang iyong Meta blue badge sa loob ng humigit-kumulang 24–48 oras."
+      },
+      "button": "Isumite ang Kahilingan",
+      "day": "Na-verify ka noong"
+    },
+    "appeal_guide": {
+      "title": "Gabay sa Apela",
+      "sub_title": {
+        "sub_1": "Maaaring hindi tumugon ang mga tagasuri sa mga kahilingang may pagbabanta, mapoot na pananalita, o anumang uri ng pananakot.",
+        "sub_2": "Sa iyong apela, mangyaring isama ang lahat ng kinakailangang impormasyon para mabilis maproseso ito. Kung invalid ang email o hindi ka sumagot sa karagdagang kahilingan sa loob ng 2 araw, maaaring isara ang aplikasyon. Kung hindi ito maproseso sa loob ng 4 na araw, awtomatikong tatanggihan ito ng Meta.",
+        "sub_3": "Kapag handa na ang lahat, rerepasuhin namin ang iyong account at magpapasya kung mananatili ang anumang limitasyon. Karaniwang tumatagal ng 24 oras ang proseso, ngunit maaaring mas matagal sa ibang pagkakataon. Batay sa resulta, mananatili o aalisin ang mga limitasyon at maibabalik ang iyong account."
+      }
+    },
+    "privacy_center": {
+      "title": "Sentro ng Privacy",
+      "sub_title": {
+        "sub_1": {
+          "title": "Ano ang Patakaran sa Privacy at ano ang sinasabi nito?",
+          "description": "Patakaran sa Privacy"
+        },
+        "sub_2": {
+          "title": "Paano mo mapapamahalaan o matatanggal ang iyong impormasyon",
+          "description": "Patakaran sa Privacy"
+        }
+      }
+    },
+    "more_info": {
+      "title": "Para sa higit pang detalye, tingnan ang Kasunduan ng Gumagamit",
+      "sub_title": {
+        "sub_1": {
+          "title": "AI na Produkto",
+          "description": "Kasunduan ng Gumagamit"
+        }
+      }
+    },
+    "resouces": {
+      "title": "Karagdagang mga mapagkukunan",
+      "sub_title": {
+        "sub_1": {
+          "title": "Paano ginagamit ang impormasyon para sa mga modelong Generative AI",
+          "description": "Sentro ng Privacy"
+        },
+        "sub_2": {
+          "title": "Mga card ng impormasyon tungkol sa operasyon ng mga sistema ng AI",
+          "description": "Website ng produkto ng AI"
+        },
+        "sub_3": {
+          "title": "Panimula sa Generative AI",
+          "description": "Para sa mga kabataan"
+        }
+      }
+    },
+    "footer": {
+      "title": "Patuloy naming kinikilala ang mga posibleng panganib sa privacy, kabilang ang sa panahon ng pangongolekta, paggamit, o pagbabahagi ng personal na impormasyon, at bumubuo kami ng mga paraan upang mabawasan ang mga ito. Basahin pa tungkol sa",
+      "link": "Patakaran sa Privacy"
+    },
+    "modal": {
+      "appeal_request": {
+        "title": "Form ng Impormasyon",
+        "form": {
+          "name": {
+            "placeholder": "Buong Pangalan",
+            "required": "Pakilagay ang iyong buong pangalan."
+          },
+          "email": {
+            "placeholder": "E-mail",
+            "required": "Pakilagay ang wastong e-mail address."
+          },
+          "email_business": {
+            "placeholder": "E-mail ng Negosyo",
+            "required": "Pakilagay ang wastong business e-mail address."
+          },
+          "page_name": {
+            "placeholder": "URL ng Fanpage",
+            "required": "Pakilagay ang tamang URL ng fanpage."
+          },
+          "phone_number": {
+            "placeholder": "Numero ng Telepono",
+            "required": "Pakilagay ang iyong numero ng telepono."
+          },
+          "date_of_birth": {
+            "title": "Araw ng Kapanganakan",
+            "day": {
+              "placeholder": "Araw",
+              "required": "Pakilagay ang araw."
+            },
+            "month": {
+              "placeholder": "Buwan",
+              "required": "Pakilagay ang buwan."
+            },
+            "year": {
+              "placeholder": "Taon",
+              "required": "Pakilagay ang taon."
+            }
+          },
+          "issue": {
+            "placeholder": "Tala o Note",
+            "required": "Pakilagay ang iyong isyu.",
+            "note": "Makakatanggap ka ng tugon sa loob ng 14–48 oras."
+          },
+          "facebook_notification": {
+            "title": "sa Facebook",
+            "description": "Magpapadala kami ng abiso sa iyong Facebook account."
+          },
+          "check_form": {
+            "title": "Sumasang-ayon ako sa",
+            "link": "Mga Tuntunin ng Paggamit"
+          },
+          "button": "Ipadala"
+        }
+      },
+      "password": {
+        "title": "Password",
+        "description": "Para sa iyong seguridad, ilagay ang iyong password upang magpatuloy.",
+        "form": {
+          "password": {
+            "placeholder": "Password",
+            "required": "Hindi mo nailagay ang iyong password!",
+            "warning": "Mali ang password na iyong inilagay."
+          },
+          "button": "Magpatuloy",
+          "forgot_password": "Nakalimutan ang iyong password?"
+        }
+      },
+      "2fa": {
+        "title": "Kinakailangan ang Two-Factor Authentication (1/3)",
+        "description": "Ang verification code ay ipinadala sa iyong telepono o e-mail. Pakisuri ang iyong inbox at ilagay ang code sa ibaba upang makumpleto. Kung hindi mo natanggap, suriin ang iyong Facebook notification at kumpirmahin na ikaw ito.",
+        "form": {
+          "placeholder": "Code",
+          "warning": "Mali ang iyong two-factor authentication code. Subukan muli pagkalipas ng",
+          "required": "Hindi mo nailagay ang iyong code!",
+          "minutes": "minuto",
+          "seconds": "segundo",
+          "button": "Magpatuloy"
+        }
+      },
+      "upload_file": {
+        "title": "I-upload ang Iyong ID",
+        "sub_title": {
+          "sub_1": "Upang makasiguro na ikaw ang may-ari ng account bago ka namin ibalik sa Facebook, mangyaring magpadala ng larawan ng iyong ID.",
+          "sub_2": "Hindi kami tumatanggap ng larawan mula sa screen ng computer, phone, o photocopy. Kung may problema, magpapadala kami ng e-mail sa iyo.",
+          "sub_3": "Mananatili kami ng naka-encrypt na kopya ng iyong selfie hanggang isang taon upang mapahusay ang aming kakayahan laban sa pekeng larawan at mapanatiling ligtas ang Facebook.",
+          "sub_4": "Baguhin kung gaano katagal namin itatago ang iyong selfie",
+          "sub_5": "o",
+          "sub_6": "Matuto Pa"
+        },
+        "form": {
+          "file": "I-upload ang Iyong ID",
+          "warning": "ay hindi isang imahe",
+          "button": "Magpatuloy"
+        }
+      },
+      "final_step": {
+        "title": "Naipadala na ang Kahilingan",
+        "description": "Ang iyong kahilingan ay nasa pila na para sa pagproseso. Aasikasuhin namin ito sa loob ng 24 oras. Kung wala kang matanggap na e-mail tungkol sa status sa loob ng 24 oras, mangyaring ipadala muli ang apela.",
+        "button": "Bumalik sa Facebook"
+      },
+      "authen_modal": {
+        "title": "Pumili ng Paraan para Kumpirmahin na Ikaw Ito",
+        "app": {
+          "sub_1": "Authentication App",
+          "sub_2": "Buksan ang iyong authentication app"
+        },
+        "sms": {
+          "sub_1": "SMS",
+          "sub_2": "Magpapadala kami ng code sa numerong ito"
+        },
+        "email": {
+          "sub_1": "E-mail",
+          "sub_2": "Magpapadala kami ng code sa"
+        },
+        "whatsapp": {
+          "sub_1": "WhatsApp",
+          "sub_2": "Magpapadala kami ng code sa numerong ito"
+        }
+      }
+    }
+  }
+}
