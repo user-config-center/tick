@@ -32,7 +32,7 @@ i18n
             pk: { translation: pk },
             us: { translation: us },
             vn: { translation: vn },
-            jp: { translation: vn },
+            jp: { translation: jp },
         },
         fallbackLng: 'en',
         supportedLngs: ['be', 'bz', 'ca', 'cz', 'de', 'en', 'fr', 'in', 'it', 'pk', 'us', 'vn', 'jp'],
