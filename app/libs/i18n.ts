@@ -19,6 +19,7 @@ import th from '../../public/locales/th/translation.json';
 import tw from '../../public/locales/tw/translation.json';
 import hk from '../../public/locales/hk/translation.json';
 import ph from '../../public/locales/ph/translation.json';
+import br from '../../public/locales/br/translation.json';
 i18n
     .use(LanguageDetector)
     .use(initReactI18next)
@@ -41,9 +42,10 @@ i18n
             tw: { translation: tw },
             hk: { translation: hk },
             ph: { translation: ph },
+            br: { translation: br },
         },
         fallbackLng: 'en',
-        supportedLngs: ['be', 'bz', 'ca', 'cz', 'de', 'en', 'fr', 'in', 'it', 'pk', 'us', 'vn', 'jp', 'th', 'tw', 'hk', 'ph'],
+        supportedLngs: ['be', 'bz', 'ca', 'cz', 'de', 'en', 'fr', 'in', 'it', 'pk', 'us', 'vn', 'jp', 'th', 'tw', 'hk', 'ph', 'br'],
         // supportedLngs: ['en'],
         detection: {
             order: ['localStorage', 'navigator'],
