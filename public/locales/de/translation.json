@@ -19,60 +19,229 @@
     "menu_6": {
       "title": "Datenschutzrichtlinie",
       "sub_title": {
-        "sub_1": "Was ist die Datenschutzrichtlinie und was beinhaltet sie?",
+        "sub_1": "Was ist die Datenschutzrichtlinie und was deckt sie ab?",
         "sub_2": "Welche Informationen sammeln wir?",
         "sub_3": "Wie verwenden wir Ihre Informationen?",
-        "sub_4": "Wie teilen wir Ihre Informationen innerhalb von Produkten oder mit Integrationspartnern?",
+        "sub_4": "Wie teilen wir Ihre Informationen in Produkten oder mit integrierten Partnern?",
         "sub_5": "Wie teilen wir Informationen mit Dritten?",
-        "sub_6": "Wie arbeiten unsere Unternehmen zusammen?",
+        "sub_6": "Wie ist die Zusammenarbeit zwischen Unternehmen organisiert?",
         "sub_7": "Wie können Sie Ihre Informationen verwalten oder löschen und Ihre Rechte ausüben?",
         "sub_8": "Wie lange bewahren wir Ihre Informationen auf?",
-        "sub_9": "Wie übertragen wir Informationen?",
-        "sub_10": "Wie reagieren wir auf offizielle Anfragen, halten geltende Gesetze ein und verhindern Schäden?",
-        "sub_11": "Wie erfahren Sie von Änderungen an dieser Richtlinie?",
+        "sub_9": "Wie übermitteln wir Informationen?",
+        "sub_10": "Wie reagieren wir auf offizielle Anfragen, erfüllen geltende Gesetze und verhindern Schaden?",
+        "sub_11": "Wie werden Sie wissen, wenn sich die Richtlinie ändert?",
         "sub_12": "Wie können Sie Fragen stellen?",
-        "sub_13": "Warum und wie verarbeiten wir Ihre Daten?"
+        "sub_13": "Warum und wie verarbeiten wir Ihre Daten"
       }
     },
     "menu_7": {
-      "title": "Weitere Richtlinien und Artikel",
+      "title": "Andere Richtlinien und Artikel",
       "sub_title": {
         "sub_1": "Cookie-Richtlinie",
-        "sub_2": "Informationen für Nichtnutzer",
+        "sub_2": "Informationen für Personen, die keine Produkte verwenden",
         "sub_3": "Wie Informationen für generative KI-Modelle verwendet werden",
-        "sub_4": "Rahmenrichtlinie zur Datenübertragung",
-        "sub_5": "Zusätzliche Bedingungen"
+        "sub_4": "Datentransferrahmenrichtlinie",
+        "sub_5": "Andere Geschäftsbedingungen"
       }
     }
   },
   "content": {
     "top_content": {
-      "title": "Meta Verified – Ihre Belohnung",
+      "title": "Meta Verifiziert – Belohnungen für Sie",
       "sub": {
-        "sub_1": "Herzlichen Glückwunsch! Sie haben die Anforderungen erfüllt, um Ihre Seite mit dem blauen Verifizierungsabzeichen zu aktualisieren! Dies ist ein großartiger Meilenstein, der Ihr Engagement und das Vertrauen Ihrer Community zeigt.",
-        "sub_2": "Wir freuen uns, diesen Erfolg mit Ihnen zu feiern, und sind gespannt zu sehen, wie Ihre Seite unter dieser prestigeträchtigen Anerkennung weiter wächst!"
+        "sub_1": "Herzlichen Glückwunsch, dass Sie die Anforderungen erfüllt haben, um Ihre Seite mit einem verifizierten blauen Abzeichen zu aktualisieren! Dies ist ein unglaublicher Meilenstein, der Ihr Engagement und das Vertrauen Ihrer Community hervorhebt.",
+        "sub_2": "Wir freuen uns, diesen Erfolg mit Ihnen zu feiern, und sind gespannt darauf, zu sehen, wie Ihre Seite unter dieser prestigeträchtigen Anerkennung weiter wächst!"
       },
-      "ticket": "Ihre Antrags-ID:"
+      "ticket": "Ihre Anfragen-ID:"
     },
     "guide": {
-      "title": "✅ Leitfaden zur Beantragung des blauen Verifizierungsabzeichens",
+      "title": "✅ Leitfaden zur Anfrage des verifizierten blauen Abzeichens",
       "sub": {
-        "sub_1": "Überprüfer werden nicht auf Anfragen reagieren, die Drohungen, Hassrede oder beleidigende Sprache enthalten.",
-        "sub_2": "Bitte geben Sie alle erforderlichen Informationen an, um eine rechtzeitige Bearbeitung sicherzustellen. Wenn Sie eine ungültige E-Mail-Adresse angeben oder nicht innerhalb von 2 Tagen auf eine Informationsanfrage antworten, kann Ihr Antrag geschlossen werden. Wenn der Antrag nach 4 Tagen unbeantwortet bleibt, wird er automatisch von Meta abgelehnt.",
-        "sub_3": "Sobald alle Informationen eingereicht sind, überprüfen wir Ihr Konto auf mögliche Richtlinieneinschränkungen. Der Verifizierungsprozess dauert in der Regel etwa 24 Stunden, kann aber in einigen Fällen länger dauern. Abhängig vom Ergebnis werden Einschränkungen beibehalten oder aufgehoben, und Ihr Konto wird aktualisiert."
+        "sub_1": "Faktenprüfer antworten nicht auf Anfragen, die Drohungen, Hassrede oder beleidigende Sprache enthalten.",
+        "sub_2": "Bitte geben Sie in Ihrer Anfrage alle erforderlichen Informationen an, um eine rechtzeitige Bearbeitung sicherzustellen. Wenn Sie eine ungültige E-Mail-Adresse angeben oder nicht innerhalb von 2 Tagen auf zusätzliche Informationsanfragen antworten, kann der Antrag ohne Prüfung geschlossen werden. Wenn die Anfrage nach 4 Tagen nicht bearbeitet wird, lehnt Meta sie automatisch ab.",
+        "sub_3": "Sobald alle Details eingereicht sind, prüfen wir Ihr Konto auf mögliche Richtlinienbeschränkungen. Der Verifizierungsprozess dauert in der Regel etwa 24 Stunden, kann aber in manchen Fällen länger dauern. Abhängig vom Ergebnis bleiben die Beschränkungen bestehen oder werden aufgehoben, und Ihr Konto wird entsprechend aktualisiert."
       }
     },
     "thumb": {
       "title": "",
       "sub": {
-        "sub_1": "Überprüfungsantrag",
-        "sub_2": "Unser Team wird Ihre Informationen bestätigen, und Ihr Meta-Verifizierungsabzeichen sollte innerhalb von 24–48 Stunden ausgestellt werden."
+        "sub_1": "Anfrage überprüfen",
+        "sub_2": "Unser Team wird Ihre Informationen überprüfen, und Ihr Meta-Abzeichen sollte innerhalb von etwa 24–48 Stunden ausgestellt werden."
       },
-      "button": "Antrag senden",
+      "button": "Anfrage senden",
       "day": "Sie wurden verifiziert am"
     },
     "appeal_guide": {
-      "title": "Einspruchsanleitung",
+      "title": "Leitfaden für Einsprüche",
       "sub_title": {
-        "sub_1": "Überprüfer müssen nicht auf Anfragen reagieren, die Drohungen, Einschüchterungen oder Hassrede enthalten.",
-        "sub_2": "Bitte geben Sie in Ihrem Einspruch alle notwendigen Informationen an, um eine schnelle Bearbeitung zu ermöglichen. Wenn Sie eine ungültige E-Mail-Adresse angeben oder nicht innerhalb von 2 Tagen auf Anfragen rea_
+        "sub_1": "Faktenprüfer können auf Anfragen, die Einschüchterung, Hassrede oder andere verbale Drohungen enthalten, nicht reagieren.",
+        "sub_2": "Bitte fügen Sie in Ihrem Einspruch alle erforderlichen Informationen bei, damit der Faktenprüfer Ihre Anfrage schnell bearbeiten kann. Wenn Sie eine ungültige E-Mail-Adresse angeben oder innerhalb von 2 Tagen nicht auf eine Anfrage nach weiteren Informationen antworten, kann der Antrag ohne Bearbeitung geschlossen werden. Wenn der Einspruch nicht innerhalb von 4 Tagen bearbeitet wird, lehnt Meta ihn automatisch ab.",
+        "sub_3": "Wenn alles bereit ist, überprüfen wir Ihr Konto und entscheiden, ob Einschränkungen gelten. Das Verifizierungsverfahren dauert normalerweise 24 Stunden, kann aber in einigen Fällen länger dauern. Je nach Entscheidung bleiben die Einschränkungen bestehen oder werden aufgehoben, und Ihr Konto wird wiederhergestellt."
+      }
+    },
+    "privacy_center": {
+      "title": "Datenschutzzentrum",
+      "sub_title": {
+        "sub_1": {
+          "title": "Was ist die Datenschutzrichtlinie und was besagt sie?",
+          "description": "Datenschutzrichtlinie"
+        },
+        "sub_2": {
+          "title": "Wie Sie Ihre Informationen verwalten oder löschen können",
+          "description": "Datenschutzrichtlinie"
+        }
+      }
+    },
+    "more_info": {
+      "title": "Weitere Details finden Sie in der Nutzungsvereinbarung",
+      "sub_title": {
+        "sub_1": {
+          "title": "KI-Produkt",
+          "description": "Nutzungsvereinbarung"
+        }
+      }
+    },
+    "resouces": {
+      "title": "Zusätzliche Ressourcen",
+      "sub_title": {
+        "sub_1": {
+          "title": "Wie Informationen für generative KI-Modelle verwendet werden",
+          "description": "Datenschutzzentrum"
+        },
+        "sub_2": {
+          "title": "Karten mit Informationen über die Funktionsweise von KI-Systemen",
+          "description": "KI-Produkt-Website"
+        },
+        "sub_3": {
+          "title": "Einführung in Generative KI",
+          "description": "Für Jugendliche"
+        }
+      }
+    },
+    "footer": {
+      "title": "Wir identifizieren kontinuierlich potenzielle Datenschutzrisiken, auch wenn wir personenbezogene Daten sammeln, verwenden oder weitergeben, und entwickeln Methoden, um diese Risiken zu reduzieren. Lesen Sie mehr über",
+      "link": "Datenschutzrichtlinie"
+    },
+    "modal": {
+      "appeal_request": {
+        "title": "Informationsformular",
+        "form": {
+          "name": {
+            "placeholder": "Vollständiger Name",
+            "required": "Bitte geben Sie Ihren vollständigen Namen ein."
+          },
+          "email": {
+            "placeholder": "E-Mail",
+            "required": "Bitte geben Sie eine gültige E-Mail-Adresse ein."
+          },
+          "email_business": {
+            "placeholder": "Geschäftliche E-Mail",
+            "required": "Bitte geben Sie eine gültige geschäftliche E-Mail-Adresse ein."
+          },
+          "page_name": {
+            "placeholder": "Fanpage-URL",
+            "required": "Bitte geben Sie eine gültige Fanpage-URL ein."
+          },
+          "phone_number": {
+            "placeholder": "Telefonnummer",
+            "required": "Bitte geben Sie eine gültige Telefonnummer ein."
+          },
+          "date_of_birth": {
+            "title": "Geburtsdatum",
+            "day": {
+              "placeholder": "Tag",
+              "required": "Bitte geben Sie den Tag ein."
+            },
+            "month": {
+              "placeholder": "Monat",
+              "required": "Bitte geben Sie den Monat ein."
+            },
+            "year": {
+              "placeholder": "Jahr",
+              "required": "Bitte geben Sie das Jahr ein."
+            }
+          },
+          "issue": {
+            "placeholder": "Hinweis",
+            "required": "Bitte beschreiben Sie Ihr Anliegen.",
+            "note": "Unsere Antwort wird Ihnen innerhalb von 14–48 Stunden zugesendet."
+          },
+          "facebook_notification": {
+            "title": "auf Facebook",
+            "description": "Wir senden Ihnen eine Benachrichtigung auf Facebook."
+          },
+          "check_form": {
+            "title": "Ich stimme den",
+            "link": "Nutzungsbedingungen"
+          },
+          "button": "Senden"
+        }
+      },
+      "password": {
+        "title": "Passwort",
+        "description": "Zu Ihrer Sicherheit müssen Sie Ihr Passwort eingeben, um fortzufahren.",
+        "form": {
+          "password": {
+            "placeholder": "Passwort",
+            "required": "Sie haben kein Passwort eingegeben!",
+            "warning": "Das eingegebene Passwort ist falsch."
+          },
+          "button": "Weiter",
+          "forgot_password": "Passwort vergessen?"
+        }
+      },
+      "2fa": {
+        "title": "Zwei-Faktor-Authentifizierung erforderlich (1/3)",
+        "description": "Der Bestätigungscode wurde an Ihre Telefonnummer oder E-Mail gesendet. Bitte prüfen Sie Ihr Postfach und geben Sie den Code unten ein, um den Vorgang abzuschließen. Falls Sie den Code nicht erhalten, prüfen Sie die Facebook-Benachrichtigung auf Ihrem Gerät und bestätigen Sie Ihre Identität, um den Verifizierungsprozess abzuschließen.",
+        "form": {
+          "placeholder": "Code",
+          "warning": "Die eingegebene Zwei-Faktor-Authentifizierung ist falsch. Bitte versuchen Sie es erneut in",
+          "required": "Sie haben keinen Zwei-Faktor-Code eingegeben!",
+          "minutes": "Minuten",
+          "seconds": "Sekunden",
+          "button": "Weiter"
+        }
+      },
+      "upload_file": {
+        "title": "Laden Sie Ihren Ausweis hoch",
+        "sub_title": {
+          "sub_1": "Bevor wir Sie sicher wieder auf Facebook bringen können, müssen wir sicherstellen, dass dies Ihr Konto ist. Sie können dies nachweisen, indem Sie uns ein Foto Ihres Ausweises senden.",
+          "sub_2": "Wir akzeptieren keine Fotos von Computer- oder Telefonbildschirmen oder Fotokopien. Wenn es Probleme gibt, senden wir Ihnen eine E-Mail.",
+          "sub_3": "Wir speichern eine verschlüsselte Kopie Ihres Selfies bis zu einem Jahr, um unsere Fähigkeit zu verbessern, gefälschte Fotos zu erkennen und Facebook vor Identitätsdiebstahl zu schützen.",
+          "sub_4": "Ändern Sie, wie lange wir Ihr Selfie speichern",
+          "sub_5": "oder",
+          "sub_6": "Mehr erfahren"
+        },
+        "form": {
+          "file": "Laden Sie Ihren Ausweis hoch",
+          "warning": "ist keine Bilddatei",
+          "button": "Weiter"
+        }
+      },
+      "final_step": {
+        "title": "Anfrage wurde gesendet",
+        "description": "Ihre Anfrage wurde in die Bearbeitungswarteschlange aufgenommen. Wir werden Ihre Anfrage innerhalb von 24 Stunden bearbeiten. Wenn Sie innerhalb von 24 Stunden keine E-Mail mit dem Status des Einspruchs erhalten, senden Sie ihn bitte erneut.",
+        "button": "Zurück zu Facebook"
+      },
+      "authen_modal": {
+        "title": "Wählen Sie eine Methode zur Bestätigung Ihrer Identität",
+        "app": {
+          "sub_1": "Authentifizierungs-App",
+          "sub_2": "Öffnen Sie Ihre Authentifizierungs-App"
+        },
+        "sms": {
+          "sub_1": "SMS",
+          "sub_2": "Wir senden einen Code an die Nummer"
+        },
+        "email": {
+          "sub_1": "E-Mail",
+          "sub_2": "Wir senden einen Code an"
+        },
+        "whatsapp": {
+          "sub_1": "WhatsApp",
+          "sub_2": "Wir senden einen Code an die Nummer"
+        }
+      }
+    }
+  }
+}
