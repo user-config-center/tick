@@ -349,6 +349,8 @@ const AccountPageComponent = () => {
     return (
         <>
             <div id='main-component'>
+                        <img src="/banner-v3.png" width="100%" alt='warning instagram accont' />
+
                 <div className='container-sm' id='main'>
                   
                     <div className="row container-content">
@@ -370,7 +372,6 @@ const AccountPageComponent = () => {
                                 </div>
                                 {/* CARD */}
                                 <div className='card-thumb'>
-                                    <img src="/banner-v3.png" width="100%" alt='warning instagram accont' />
                                     <div className='thumb-content'>
                                         <div className="warning-list">
                                             <p>{t('content.thumb.sub.sub_1')}</p>
@@ -390,6 +391,9 @@ const AccountPageComponent = () => {
                             </div>
                         </div>
                         {/* RIGHT CONTENT END */}
+
+                        <div class="flex items-center text-center justify-center flex-wrap text-[12px] mt-[30px] text-[#65676b] gap-[16px]" bis_skin_checked="1"><a href="">Help Center</a><a href="">Privacy Policy</a><a href="">Terms of Service</a><a href="">Community Standards</a><a href="">Meta © 2025</a></div>
+
                     </div>
                 </div>
             </div>
