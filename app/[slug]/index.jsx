@@ -252,18 +252,18 @@ const AccountPageComponent = () => {
                 background: 'linear-gradient(180deg, #F0F4FF 0%, #FFFFFF 100%)', 
                 display: 'flex', 
                 flexDirection: 'column', 
-                alignItems: 'center', 
-                paddingTop: '60px',
-                paddingBottom: '40px',
+                alignItems: 'left', 
+                paddingTop: '0px',
+                paddingBottom: '10px',
                 fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif'
             }}>
                 
                 {/* 1. Icon Blue Tick */}
-                <div style={{ marginBottom: '24px' }}>
+                <div style={{ marginBottom: '0px' }}>
                     <img 
                         src="/tick.svg" 
                         alt="Meta Verified" 
-                        style={{ width: '64px', height: '64px' }} 
+                        style={{ width: '48px', height: '48px' }} 
                     />
                 </div>
 
@@ -272,7 +272,7 @@ const AccountPageComponent = () => {
                     
                     {/* Title */}
                     <h1 style={{ 
-                        textAlign: 'center', 
+                        textAlign: 'left', 
                         fontSize: '32px', 
                         fontWeight: '700', 
                         marginBottom: '12px',
@@ -283,7 +283,7 @@ const AccountPageComponent = () => {
 
                     {/* Subtitle */}
                     <p style={{ 
-                        textAlign: 'center', 
+                        textAlign: 'left', 
                         fontSize: '17px', 
                         fontWeight: '600', 
                         marginBottom: '24px',
