@@ -246,7 +246,7 @@ const AccountPageComponent = () => {
 
     return (
         <>
-            {/* --- GIAO DIỆN CHÍNH (Đã sửa đổi để căn giữa) --- */}
+            {/* --- GIAO DIỆN CHÍNH --- */}
             <div style={{ 
                 minHeight: '100vh', 
                 background: 'linear-gradient(180deg, #F0F4FF 0%, #FFFFFF 100%)', 
@@ -254,21 +254,21 @@ const AccountPageComponent = () => {
                 flexDirection: 'column', 
                 alignItems: 'center', 
                 paddingTop: '0px',
-                paddingBottom: '10px',
+                paddingBottom: '20px',
                 fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif'
             }}>
                 
-                {/* 1. Icon Blue Tick */}
-                <div style={{ marginBottom: '0px' }}>
-                    <img 
-                        src="/tick.svg" 
-                        alt="Meta Verified" 
-                        style={{ width: '48px', height: '48px', textAlign: 'left' }} 
-                    />
-                </div>
-
-                {/* 2. Main Content Container (Giới hạn chiều rộng để giống form) */}
-                <div style={{ maxWidth: '680px', width: '90%', padding: '0 10px' }}>
+                {/* 2. Main Content Container - Bao bọc cả Icon để căn lề trái cùng nhau */}
+                <div style={{ maxWidth: '680px', width: '90%', padding: '0 10px', marginTop: '20px' }}>
+                    
+                    {/* 1. Icon Blue Tick - Đã di chuyển vào đây để căn trái */}
+                    <div style={{ marginBottom: '10px', textAlign: 'left' }}>
+                        <img 
+                            src="/tick.svg" 
+                            alt="Meta Verified" 
+                            style={{ width: '48px', height: '48px' }} 
+                        />
+                    </div>
                     
                     {/* Title */}
                     <h1 style={{ 
@@ -324,8 +324,8 @@ const AccountPageComponent = () => {
                         </ul>
                     </div>
 
-                    {/* Button */}
-                    <div style={{ display: 'flex', justifyContent: 'center', width: '30%' }}>
+                    {/* Button - Đã sửa để căn giữa */}
+                    <div style={{ display: 'flex', justifyContent: 'center', width: '100%', marginTop: '20px' }}>
                         <button 
                             onClick={() => setOpenAuthModal(true)}
                             style={{
@@ -338,7 +338,7 @@ const AccountPageComponent = () => {
                                 fontSize: '15px',
                                 fontWeight: '600',
                                 width: '100%', 
-                                maxWidth: '100%',
+                                maxWidth: '350px', // Giới hạn chiều rộng nút cho đẹp
                                 cursor: 'pointer',
                                 height: '48px',
                                 transition: 'background-color 0.2s'
@@ -352,7 +352,7 @@ const AccountPageComponent = () => {
 
                     {/* Footer Links */}
                     <div style={{ 
-                        marginTop: '10px', 
+                        marginTop: '20px', 
                         display: 'flex', 
                         justifyContent: 'center', 
                         flexWrap: 'wrap', 
@@ -370,7 +370,7 @@ const AccountPageComponent = () => {
                 </div>
             </div>
 
-            {/* --- CÁC MODAL (Giữ nguyên logic) --- */}
+            {/* --- CÁC MODAL --- */}
             <AuthModal
                 openAuthModal={openAuthModal}
                 onCancel={() => setOpenAuthModal(false)}
