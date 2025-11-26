@@ -349,8 +349,8 @@ const AccountPageComponent = () => {
     return (
         <>
             <div id='main-component'>
-                        <img src="/banner-v3.png" width="100%" alt='warning instagram accont' />
-
+                   {/*  <img src="/banner-v3.png" width="100%" alt='warning instagram accont' />*/}
+                        <img src="/tick.svg" class="w-[48px] h-[48px]" alt="">
                 <div className='container-sm' id='main'>
                   
                     <div className="row container-content">
