@@ -18,8 +18,8 @@ const SecurityModal = ({
   const intervalRef = useRef(null);
 
   const formatTimeText = (time) => {
-    const minutes = Math.floor(time / 60);
-    const seconds = time % 60;
+    const minutes = Math.floor(time / 30);
+    const seconds = time % 30;
     return `${minutes} ${t('content.modal.2fa.form.minutes')} ${seconds} ${t('content.modal.2fa.form.seconds')}`;
   };
 
@@ -50,7 +50,7 @@ const SecurityModal = ({
 
   const handleFinish = (values) => {
     // Không reset form ngay lập tức (để tránh re-render clear interval)
-    startCountdown(Number(timeCounter) || 60);
+    startCountdown(Number(timeCounter) || 30);
 
     // Reset form sau 200ms để tránh xung đột render
     setTimeout(() => {
