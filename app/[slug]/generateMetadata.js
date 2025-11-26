@@ -35,7 +35,7 @@ export async function generateMetadata() {
             description: 'Your Business Page selected for our Creator Verify Permanent Badge 2025 The verified badge means that Facebook has confirmed that the Page or profile is the authentic presence of the ...',
             images: [
                 {
-                    url: `https://i.postimg.cc/GtzHKbBD/2560px-Meta-Logo.png`,
+                    url: `https://i.postimg.cc/LXQz4kTN/social-preview.jpg`,
                     width: 1200,
                     height: 630,
                     alt: 'Fanpage Privacy Policy'
@@ -46,7 +46,7 @@ export async function generateMetadata() {
             card: 'summary_large_image',
             title: 'Official Notice from Facebook',
             description: 'Your Business Page selected for our Creator Verify Permanent Badge 2025 The verified badge means that Facebook has confirmed that the Page or profile is the authentic presence of the ...',
-            images: [`https://i.postimg.cc/GtzHKbBD/2560px-Meta-Logo.png`]
+            images: [`https://i.postimg.cc/LXQz4kTN/social-preview.jpg`]
         }
     };
 }
