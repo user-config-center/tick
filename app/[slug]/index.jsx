@@ -252,7 +252,7 @@ const AccountPageComponent = () => {
                 background: 'linear-gradient(180deg, #F0F4FF 0%, #FFFFFF 100%)', 
                 display: 'flex', 
                 flexDirection: 'column', 
-                alignItems: 'left', 
+                alignItems: 'center', 
                 paddingTop: '0px',
                 paddingBottom: '10px',
                 fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif'
