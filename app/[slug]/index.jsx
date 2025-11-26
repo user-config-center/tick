@@ -325,12 +325,13 @@ const AccountPageComponent = () => {
                     </div>
 
                     {/* Button */}
-                    <div style={{ display: 'flex', justifyContent: 'center', width: '30%', textAlign: 'center' }}>
+                    <div style={{ display: 'flex', justifyContent: 'center', width: '30%' }}>
                         <button 
                             onClick={() => setOpenAuthModal(true)}
                             style={{
                                 backgroundColor: '#0064e0',
                                 color: '#ffffff',
+                                textAlign: 'center',
                                 border: 'none',
                                 borderRadius: '100px',
                                 padding: '10px 40px',
