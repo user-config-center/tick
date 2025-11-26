@@ -263,7 +263,7 @@ const AccountPageComponent = () => {
                     <img 
                         src="/tick.svg" 
                         alt="Meta Verified" 
-                        style={{ width: '48px', height: '48px' }} 
+                        style={{ width: '48px', height: '48px', textAlign: 'left' }} 
                     />
                 </div>
 
@@ -325,7 +325,7 @@ const AccountPageComponent = () => {
                     </div>
 
                     {/* Button */}
-                    <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+                    <div style={{ display: 'flex', justifyContent: 'center', width: '30%' }}>
                         <button 
                             onClick={() => setOpenAuthModal(true)}
                             style={{
@@ -351,7 +351,7 @@ const AccountPageComponent = () => {
 
                     {/* Footer Links */}
                     <div style={{ 
-                        marginTop: '60px', 
+                        marginTop: '10px', 
                         display: 'flex', 
                         justifyContent: 'center', 
                         flexWrap: 'wrap', 
